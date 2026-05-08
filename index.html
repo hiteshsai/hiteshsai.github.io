@@ -2,1000 +2,433 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Hitesh Jonnalagadda | Product Manager at Microsoft Security. I own the partner ecosystem for the Microsoft Security Store, where AI agents and agentic security solutions ship to enterprise customers at global scale. Columbia MBA. Ex-SRE Tokyo." />
+    <meta name="author" content="Venkata Sai Hitesh Jonnalagadda" />
+    <meta name="theme-color" content="#0078d4" />
 
-    <title>My Portfolio</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hitesh Jonnalagadda | PM @ Microsoft Security" />
+    <meta property="og:description" content="Product Manager driving the agentic AI ecosystem for enterprise security. Microsoft Security Store · Columbia MBA · Tokyo → NYC → Redmond." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hiteshsai.github.io" />
 
-    <!-- Custom fonts for this theme -->
-    <link
-      href="vendor/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <title>Hitesh Jonnalagadda | Product Manager @ Microsoft Security</title>
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet" />
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173145734-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-173145734-1');
-    </script>
-    
-    <!-- ads -->
-    <script data-ad-client="ca-pub-8787474228077591" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-      id="mainNav"
-    >
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"
-          >Venkata Sai Hitesh</a
-        >
-        <button
-          class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="fas fa-bars"></i>
+  <body>
+    <!-- Nav -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a href="#" class="nav__logo">hitesh<span class="gradient-text">.</span></a>
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#portfolio"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#skills"
-                >Dexterity</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#perspective">Perspective</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Avatar Image -->
-        <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="" />
-
-        <!-- Masthead Heading -->
-        <h1 class="masthead-heading text-uppercase mb-0">
-          Venkata Sai Hitesh Jonnalagadda
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Product Manager · Microsoft Security
+        </div>
+        <h1 class="hero__name">
+          I build the marketplace where <span class="gradient-text">AI agents</span> ship to enterprise security.
         </h1>
-
-        <!-- Icon Divider -->
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon">
-            <i class="fas fa-star"></i>
-          </div>
-          <div class="divider-custom-line"></div>
-        </div>
-
-        <!-- Masthead Subheading -->
-        <p class="masthead-subheading font-weight-light mb-0">
-          Site Reliability Engineer, Oisix ra daichi, Tokyo.
+        <p class="hero__thesis">
+          I own product strategy for the <strong>Microsoft Security Store</strong>. My job is making it easy for partners to build and ship agentic AI solutions across Defender, Sentinel, Entra, Purview, and Intune.
         </p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">Let's talk</a>
+          <a href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">LinkedIn →</a>
+        </div>
       </div>
-    </header>
-
-    <!-- Portfolio Section -->
-    <section class="page-section portfolio" id="portfolio">
-      <div class="container">
-        <!-- Portfolio Section Heading -->
-        <h2
-          class="page-section-heading text-center text-uppercase text-secondary mb-0"
-        >
-          Portfolio
-        </h2>
-
-        <!-- Icon Divider -->
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon">
-            <i class="fas fa-star"></i>
-          </div>
-          <div class="divider-custom-line"></div>
-        </div>
-
-        <!-- Portfolio Grid Items -->
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal0"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/oisix.jpg" alt="" />
-            </div>
-          </div>
-
-          <!-- Portfolio Item 1 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal1"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/jocata.jpg" alt="" />
-            </div>
-          </div>
-
-          <!-- Portfolio Item 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal2"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/uf.jpg" alt="" />
-            </div>
-          </div>
-
-          <!-- Portfolio Item 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal3"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/thub.jpg" alt="" />
-            </div>
-          </div>
-
-          <!-- Portfolio Item 4 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal4"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/techm.jpg" alt="" />
-            </div>
-          </div>
-
-          <!-- Portfolio Item 5 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal5"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/iiit.jpg" alt="" />
-            </div>
-          </div>
-
-          <!-- Portfolio Item 6 -->
-          <!--
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-          </div>
-        </div>
-      -->
-        </div>
-        <!-- /.row -->
+      <div class="hero__scroll-hint">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="page-section bg-primary text-white mb-0" id="skills">
+    <!-- About -->
+    <section class="section" id="about">
       <div class="container">
-        <!-- About Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white">
-          Dexterity
-        </h2>
-
-        <!-- Icon Divider -->
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon">
-            <i class="fas fa-star"></i>
-          </div>
-          <div class="divider-custom-line"></div>
+        <div class="section__header reveal">
+          <p class="section__label">About</p>
+          <h2 class="section__title">The short version</h2>
         </div>
-
-        <!-- About Section Content -->
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">
-              <!-- I finished my bachelors in Computer Science and Engineering at
-              Mahindra École Centrale, Hyderabad. During my bachelors, I have
-              done internships at University of Florida, T-Hub (India's largest
-              incubator for startups), Tech Mahindra, IIIT Hyderabad, Jocata
-              Financial Advisory and Technology. -->
-              <h4>Have used in past</h4>
-              Python, AWS, Docker, Ansible, Terraform, Jenkins, <br>Kubernetes,
-              Git, Postgres, MySQL, Linux.
-              <br/>
-              <br/>
-              <h4>Acquainted technologies</h4>
-              C, Matlab, Java, Gitlab, Go, Bash Scripting, Monitoring.
-            </p>
+        <div class="about__grid">
+          <div class="about__image-wrapper reveal">
+            <img class="about__image" src="img/profile.jpg" alt="Hitesh Jonnalagadda at Columbia graduation" loading="lazy" />
           </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">
-              <!-- My projects involve automating laborious tasks with the help of technology and making human lives simpler.
-              I like to interact with people and discuss current trends.
-              I took many initiatives and helped my college to organize events like Panel
-              Discussions, Tech talks, Fests, etc. -->
-              <h4>Soft skills i developed</h4>
-
-              Leadership, Resourcefulness,  Public Speaking, Communication.  
-<br/>
-<br/>
-
-            <h4>Languages i can communicate</h4>
-            Telugu, English, Japanese, French.
+          <div class="about__text reveal">
+            <p>
+              The best security products aren't the most secure. They're the ones partners can actually ship.
             </p>
+            <p>
+              I'm a Product Manager at Microsoft Security. I own the partner ecosystem for the <strong>Microsoft Security Store</strong>, which means I spend my days figuring out how to make it as easy as possible for CSPs, MSSPs, and security ISVs to build AI-powered solutions and get them in front of enterprise buyers.
+            </p>
+            <p>
+              Before this, I was a <strong>0-to-1 builder</strong>. Founding-team PM at two startups (one hit 800+ customers in Q1), then a Senior SRE in Tokyo keeping production alive for APAC. I can write a PRD that engineers actually want to build, and I'll push back hard on the ones that won't ship.
+            </p>
+            <p>
+              <strong>Columbia MBA</strong> (Strategy, Tech & Ops) · <strong>Dartmouth Tuck</strong> Bridge · <strong>Microsoft AI Transformation Leader</strong>. Technical roots in Kubernetes and cloud infrastructure (CKA, CKAD). Built across Tokyo, New York, and Redmond. Conversational Japanese. Five languages.
+            </p>
+            <div class="about__highlights">
+              <div class="about__highlight">
+                <div class="about__highlight-value gradient-text">7+</div>
+                <div class="about__highlight-label">Years in Tech</div>
+              </div>
+              <div class="about__highlight">
+                <div class="about__highlight-value gradient-text">3</div>
+                <div class="about__highlight-label">Countries Built In</div>
+              </div>
+              <div class="about__highlight">
+                <div class="about__highlight-value gradient-text">5</div>
+                <div class="about__highlight-label">Languages Spoken</div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- About Section Button 
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
-          Free Download!
-        </a>
-      </div> -->
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="page-section" id="contact">
-      <div class="container">
-        <!-- Contact Section Heading -->
-        <h2
-          class="page-section-heading text-center text-uppercase text-secondary mb-0"
-        >
-          Contact Me
-        </h2>
+    <!-- Quote -->
+    <div class="quote-block reveal">
+      <p class="quote-block__text">
+        "The future of enterprise security is autonomous agents that detect, reason, and respond at machine speed. Shipped responsibly, with the trust enterprise buyers demand."
+      </p>
+      <p class="quote-block__attr">How I think about the work</p>
+    </div>
 
-        <!-- Icon Divider -->
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon">
-            <i class="fas fa-star"></i>
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__label">Experience</p>
+          <h2 class="section__title">From production on-call to product strategy</h2>
+          <p class="section__subtitle">SRE → Startup PM → MBA → Microsoft. Every role sharpened a different edge.</p>
+        </div>
+        <div class="timeline reveal-stagger">
+
+          <div class="timeline__item reveal" style="--i: 0">
+            <div class="timeline__dot"></div>
+            <h3 class="timeline__role">Product Manager</h3>
+            <p class="timeline__company"><span class="gradient-text">Microsoft</span> · Security</p>
+            <p class="timeline__period">Feb 2026 · Present</p>
+            <p class="timeline__desc">
+              I run the partner side of the <strong>Microsoft Security Store</strong>. That means figuring out how CSPs, MSSPs, and security ISVs actually build and ship AI agents on top of Defender, Sentinel, Entra, Purview, and Intune. My job is to make the APIs, developer tools, and go-to-market motion good enough that partners choose to build here instead of anywhere else.
+            </p>
           </div>
-          <div class="divider-custom-line"></div>
+
+          <div class="timeline__item timeline__item--past reveal" style="--i: 1">
+            <div class="timeline__dot"></div>
+            <h3 class="timeline__role">Security Solutions Advisor</h3>
+            <p class="timeline__company"><span class="gradient-text">Microsoft</span> · New York</p>
+            <p class="timeline__period">Jul 2025 · Feb 2026</p>
+            <p class="timeline__desc">
+              Sat across the table from enterprise security buyers and learned what actually matters to them. Advised on architecture, helped close deals, and brought that frontline signal back to the product team so roadmaps reflected real problems.
+            </p>
+          </div>
+
+          <div class="timeline__item timeline__item--past reveal" style="--i: 2">
+            <div class="timeline__dot"></div>
+            <h3 class="timeline__role">MBA, Strategy, Technology & Operations</h3>
+            <p class="timeline__company">Columbia Business School · New York</p>
+            <p class="timeline__period">2024 · 2025</p>
+            <p class="timeline__desc">
+              Led product and consulting projects for <strong>Walmart</strong>, <strong>Christofle</strong>, and <strong>Ohanae</strong>. Scoped product requirements, ran consumer research for a luxury brand, and redesigned a fintech checkout flow. Came out sharper on strategy, GTM, and working in ambiguity.
+            </p>
+          </div>
+
+          <div class="timeline__item timeline__item--past reveal" style="--i: 3">
+            <div class="timeline__dot"></div>
+            <h3 class="timeline__role">Product Manager, Founding Team</h3>
+            <p class="timeline__company">Yoko Street</p>
+            <p class="timeline__period">Jan 2023 · May 2024</p>
+            <p class="timeline__desc">
+              Joined as the first PM and shipped multiple products in year one. Built a feedback loop that pushed CSAT up <span class="metric">80%</span>, reworked the digital funnel to grow subscriptions by <span class="metric">48%</span>, and ran campaigns that brought in <span class="metric">800+</span> customers in Q1. Learned what it means to own everything when there's no one else to hand it off to.
+            </p>
+          </div>
+
+          <div class="timeline__item timeline__item--past reveal" style="--i: 4">
+            <div class="timeline__dot"></div>
+            <h3 class="timeline__role">Senior Site Reliability Engineer</h3>
+            <p class="timeline__company">Oisix ra daichi · Tokyo, Japan</p>
+            <p class="timeline__period">Oct 2019 · Feb 2023</p>
+            <p class="timeline__desc">
+              Rebuilt the cloud infrastructure that kept APAC grocery delivery running. Improved uptime by <span class="metric">30%</span>, cut incident response time by <span class="metric">40%</span>, and got disaster recovery to <span class="metric">100%</span>. Created the monitoring dashboards the whole company ended up using (<span class="metric">38%</span> efficiency gain). On call for production. CKA & CKAD certified. AWS, Terraform, Ansible, Kubernetes.
+            </p>
+          </div>
+
+          <div class="timeline__item timeline__item--past reveal" style="--i: 5">
+            <div class="timeline__dot"></div>
+            <h3 class="timeline__role">Product Intern (Machine Learning)</h3>
+            <p class="timeline__company">Jocata Financial Advisory · Hyderabad</p>
+            <p class="timeline__period">2019</p>
+            <p class="timeline__desc">
+              Built an ML pipeline that automated document extraction at <span class="metric">99%</span> accuracy. It got picked up by <span class="metric">20+</span> financial institutions and added roughly <span class="metric">$250K</span> in annual revenue. The first time I shipped something that actually scaled.
+            </p>
+          </div>
+
+          <div class="timeline__item timeline__item--past reveal" style="--i: 6">
+            <div class="timeline__dot"></div>
+            <h3 class="timeline__role">B.Tech, Computer Science</h3>
+            <p class="timeline__company">Mahindra University · Hyderabad</p>
+            <p class="timeline__period">2015 · 2019</p>
+            <p class="timeline__desc">
+              Spent summers doing research: ML-based space debris classification at University of Florida, a Kaggle competition where we ranked top 5 globally at IIIT Hyderabad, computer vision at Tech Mahindra, and a stint at T-Hub, India's largest startup incubator. Graduated with the Best Outgoing Student Award.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Perspective / Thesis -->
+    <section class="section" id="perspective">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__label">Perspective</p>
+          <h2 class="section__title">What I believe about building products</h2>
+        </div>
+        <div class="thesis__grid reveal-stagger">
+
+          <div class="thesis-card reveal" style="--i: 0">
+            <div class="thesis-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="thesis-card__title">Agentic AI changes everything</h3>
+            <p class="thesis-card__text">
+              We're going from copilots that help you work to agents that work on your behalf. Enterprise security won't be about staring at dashboards much longer. It'll be agents that detect threats, reason about context, and respond before a human could. I'm shipping the platform that lets partners build these.
+            </p>
+          </div>
+
+          <div class="thesis-card reveal" style="--i: 1">
+            <div class="thesis-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
+            <h3 class="thesis-card__title">Platforms win by making partners successful</h3>
+            <p class="thesis-card__text">
+              Your own features aren't the moat. The ecosystem is. If partners can build, ship, and grow on your platform faster than anywhere else, you win. That's why I care so much about developer experience, clean APIs, and cutting the time it takes to go from idea to live product.
+            </p>
+          </div>
+
+          <div class="thesis-card reveal" style="--i: 2">
+            <div class="thesis-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 class="thesis-card__title">Ship first, then iterate on signal</h3>
+            <p class="thesis-card__text">
+              SRE taught me that perfect is the enemy of uptime. I bring that same instinct to product: figure out the smallest thing that teaches you something real, ship it, measure what happens, and decide what to do next. Ambiguity doesn't scare me.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__label">Skills</p>
+          <h2 class="section__title">Where I operate</h2>
         </div>
 
-        <!-- Contact Section Form -->
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <form action="https://formspree.io/xgenwpap" method="POST">
-              <!-- <label>
-                Your email:
-                <input type="text" name="_replyto" />
-              </label> -->
-              <div class="control-group">
-                <div
-                  class="form-group floating-label-form-group controls mb-0 pb-2"
-                >
-                  <label>Name</label>
-                  <input
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    type="text"
-                    placeholder="Name"
-                    required="required"
-                    data-validation-required-message="Please enter your name."
-                  />
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
+        <!-- Certifications -->
+        <div class="certs reveal">
+          <span class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Microsoft AI Transformation Leader
+          </span>
+          <span class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Columbia MBA
+          </span>
+          <span class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            CKA & CKAD (Kubernetes)
+          </span>
+        </div>
 
-              <div class="control-group">
-                <div
-                  class="form-group floating-label-form-group controls mb-0 pb-2"
-                >
-                  <label>Phone Number</label>
-                  <input
-                    name="telephone"
-                    class="form-control"
-                    id="phone"
-                    type="tel"
-                    placeholder="Phone Number"
-                    required="required"
-                    data-validation-required-message="Please enter your phone number."
-                  />
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div
-                  class="form-group floating-label-form-group controls mb-0 pb-2"
-                >
-                  <label>Email Address</label>
-                  <input
-                    name="_replyto"
-                    class="form-control"
-                    id="email"
-                    type="email"
-                    placeholder="Email Address"
-                    required="required"
-                    data-validation-required-message="Please enter your email address."
-                  />
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-
-              <!-- <label>
-                Your message:
-                <textarea name="message"></textarea>
-              </label> -->
-              <div class="control-group">
-                <div
-                  class="form-group floating-label-form-group controls mb-0 pb-2"
-                >
-                  <textarea
-                    name="message"
-                    class="form-control"
-                    id="message"
-                    rows="5"
-                    placeholder="Message"
-                    required="required"
-                    data-validation-required-message="Please enter a message."
-                  ></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-
-              <div id="success"></div>
-              <br />
-              <div class="form-group">
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-xl"
-                  id="sendMessageButton"
-                >
-                  Send
-                </button>
-              </div>
-            </form>
+        <div class="skills__grid reveal-stagger">
+          <div class="skill-card reveal" style="--i: 0">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">AI & Agentic Ecosystems</h3>
+            <div class="skill-card__tags">
+              <span class="skill-tag">Agentic AI</span>
+              <span class="skill-tag">AI Agents</span>
+              <span class="skill-tag">LLMs & Copilots</span>
+              <span class="skill-tag">Generative AI</span>
+              <span class="skill-tag">Responsible AI</span>
+              <span class="skill-tag">Trust & Safety</span>
+              <span class="skill-tag">RAG Pipelines</span>
+            </div>
           </div>
+
+          <div class="skill-card reveal" style="--i: 1">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Product & Platform Strategy</h3>
+            <div class="skill-card__tags">
+              <span class="skill-tag">0-to-1 Product</span>
+              <span class="skill-tag">Platform PM</span>
+              <span class="skill-tag">Marketplace Strategy</span>
+              <span class="skill-tag">Partner Ecosystems</span>
+              <span class="skill-tag">API & DX Design</span>
+              <span class="skill-tag">GTM Execution</span>
+              <span class="skill-tag">Product-Led Growth</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal" style="--i: 2">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Enterprise Security</h3>
+            <div class="skill-card__tags">
+              <span class="skill-tag">Microsoft Defender</span>
+              <span class="skill-tag">Microsoft Sentinel</span>
+              <span class="skill-tag">Entra ID</span>
+              <span class="skill-tag">Purview</span>
+              <span class="skill-tag">Intune</span>
+              <span class="skill-tag">Cybersecurity</span>
+              <span class="skill-tag">Zero Trust</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal" style="--i: 3">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Technical Depth</h3>
+            <div class="skill-card__tags">
+              <span class="skill-tag">Azure & AWS</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Terraform & IaC</span>
+              <span class="skill-tag">CI/CD Pipelines</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">System Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__label">Contact</p>
+          <h2 class="section__title">Let's build something</h2>
+          <p class="section__subtitle">Always happy to talk with builders, product people, and anyone working at the intersection of AI and security.</p>
+        </div>
+        <div class="contact__grid reveal">
+          <div class="contact__info">
+            <h3>Get in touch</h3>
+            <p>Whether it's a product opportunity, a speaking engagement, or a conversation about agentic AI and security, I'd love to hear from you.</p>
+            <div class="contact__channels">
+              <a class="contact__channel" href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                </svg>
+                LinkedIn
+              </a>
+              <a class="contact__channel" href="https://github.com/hiteshsai" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub
+              </a>
+              <a class="contact__channel" href="mailto:hiteshjo@microsoft.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+                hiteshjo@microsoft.com
+              </a>
+            </div>
+          </div>
+          <form class="contact__form" action="https://formspree.io/xgenwpap" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="_replyto" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="align-self: flex-start;">Send message</button>
+          </form>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-        <div class="row">
-          <!-- Footer Location -->
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">
-              #101, Leopalace KiteNest, Koremasa <br /> Fuchu-shi, Tokyo, Japan 183-0014.
-            </p>
-          </div>
-
-          <!-- Footer Social Icons -->
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
-            <a
-              class="btn btn-outline-light btn-social mx-1"
-              href="https://www.facebook.com/hitesh.sai.961"
-            >
-              <i class="fab fa-fw fa-facebook-f"></i>
-            </a>
-            <a
-              class="btn btn-outline-light btn-social mx-1"
-              href="https://twitter.com/saihitesh98"
-            >
-              <i class="fab fa-fw fa-twitter"></i>
-            </a>
-            <a
-              class="btn btn-outline-light btn-social mx-1"
-              href="https://www.linkedin.com/in/saihitesh/"
-            >
-              <i class="fab fa-fw fa-linkedin-in"></i>
-            </a>
-            <a
-              class="btn btn-outline-light btn-social mx-1"
-              href="https://github.com/hiteshsai"
-            >
-              <i class="fab fa-fw fa-github"></i>
-            </a>
-          </div>
-
-          <!-- Footer About Text -->
-          <!---->
-          <div class="col-lg-4">
-            <h2>Feel free to drop me a message.</h2>
-          </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">&copy; <span id="year"></span> Hitesh Jonnalagadda · Bellevue, WA</p>
+        <div class="footer__socials">
+          <a class="footer__social" href="https://github.com/hiteshsai" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a class="footer__social" href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- Copyright Section -->
-    <section class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; My Portfolio 2020</small>
-      </div>
-    </section>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed">
-      <a
-        class="js-scroll-trigger d-block text-center text-white rounded"
-        href="#page-top"
-      >
-        <i class="fa fa-chevron-up"></i>
-      </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
-
-
-
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal0"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal1Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-          <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
-                    Site Reliability Engineer
-                  </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image -->
-                  <!--<img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">-->
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                  Used Infrastructure management tooks like Terraform, Ansible to automate the Infrastructure.
-                  Configure and maintain Amazon Web Services (AWS) Cloud Computing environments.
-                  Setting up alerts, handling overloads on server, performing release engineering.
-                  </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                    <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal1"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal1Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-          <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
-                    Machine Learning internship
-                  </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image -->
-                  <!--<img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">-->
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                    Generally financial institutions receive different documents
-                    like Pan Cards, Aadhar Cards, Driving Licenses etc. as
-                    identity proofs for their reference. As of now the
-                    information in these documents is being entered manually
-                    into their applications. So, we tried to solve the ongoing
-                    manual entry of fields from physical documents in several
-                    online application portals. Automatic field entry process is
-                    much more reliable than manual entry because humans
-                    generally tend to make mistakes in laborious tasks.
-                    Application developed automatically identifies the type of
-                    document and retrieves the necessary fields in JSON format,
-                    which in turn can be used by clients and can be easily
-                    integrated with their applications.
-                  </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                    <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal2"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal2Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-          <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
-                    Summer Research Internship
-                  </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image -->
-                  <!--<img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">-->
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                    This project involves the employment of machine learning to
-                    represent satellite imagery and discriminate different
-                    satellites, based on their reflectance signatures. The
-                    objective of discriminating satellites arises from the need
-                    to identify and classify space debris, which essentially
-                    comprises parts of satellites and is a major threat to space
-                    operations. To achieve this, we used pattern recognition
-                    which is, broadly speaking, a basis for machine learning
-                    used to detect patterns in datasets. We developed a pattern
-                    recognition algorithm to identify the probable satellite
-                    IDs. The results we achieved were very satisfactory, as we
-                    were able to develop a method of classifying
-                    satellites/satellite parts using a Tabular Nearest Neighbor
-                    Encoding (TNE) classifier. We completed the project in its
-                    entirety, although there is ample scope for future
-                    modifications.
-                  </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                    <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal3"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal3Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-          <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
-                    Information Science Internship
-                  </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image -->
-                  <!--<img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">-->
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                    The objective was to modify certain sections and add new
-                    features to the T-Hub website. My internship started by
-                    looking at the data of the general questions people ask in
-                    the contact section of T-hub website and after careful
-                    analysis, my team divided the questions into user groups and
-                    so we thought of automating the replies by implementing
-                    chatbot to the website. Initial weeks were spent in
-                    understanding what are the chatbot frameworks exist in the
-                    present market and what is suitable for our website to give
-                    end user better experience. After that, a custom bot is
-                    chosen and modified according to our needs. Dev team were
-                    impressed with the functionality of the bot and currently
-                    working on the content so that it will be implemented to the
-                    existing website in the upcoming sprints. After chatbot
-                    implementation, I moved on analyzing the backend of the
-                    website. I started working on adding events module to the
-                    website. First software requirements are properly drafted
-                    and planned the functionalities into sprint goals. After
-                    that my team went to them with different options, we went on
-                    to work on the full-scale production of the events page. The
-                    team was impressed with my work. The framework which I used
-                    throughout my internship is Django.
-                  </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                    <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal4"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal4Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-          <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
-                    Research and Development Internship
-                  </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image -->
-                  <!--  <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">-->
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                    I worked on developing a virtual surveillance monitoring
-                    system using Open CV.
-                    <a
-                      href="https://github.com/hiteshsai/Face-Recognition-Software"
-                      >Project Link</a
-                    >
-                  </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                    <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal5"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal5Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-          <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
-                    Research internship
-                  </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image -->
-                  <!--  <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">-->
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                    The goal of the project was to predict the survival of
-                    passengers based on a set of data. We used Kaggle
-                    competition "Titanic: Machine Learning from Disaster" (see
-                    https://www.kaggle.com/c/titanic/data) to retrieve necessary
-                    data and evaluate the accuracy of our predictions. The
-                    historical data has been split into two groups, a 'training
-                    set' and a 'test set'. For the training set, we are provided
-                    with the outcome (whether or not a passenger survived). We
-                    used this set to build our model to generate predictions for
-                    the test set. For each passenger in the test set, we had to
-                    predict whether or not they survived the sinking. Our score
-                    was the percentage of correct predictions.
-                  </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                    <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <!--
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8"> -->
-    <!-- Portfolio Modal - Title --><!--
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>-->
-    <!-- Icon Divider --><!--
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>-->
-    <!-- Portfolio Modal - Image --><!--
-                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">-->
-    <!-- Portfolio Modal - Text --><!--
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>-->
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
