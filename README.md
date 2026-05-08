@@ -12,7 +12,6 @@ Personal portfolio site for **Hitesh Jonnalagadda**, Product Manager at Microsof
 - Hosted on GitHub Pages
 - Dark/light mode with system preference detection
 - Scroll-driven animations via IntersectionObserver
-- Contact form via [Formspree](https://formspree.io)
 
 ## Local dev
 
