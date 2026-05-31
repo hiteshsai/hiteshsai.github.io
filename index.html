@@ -7,21 +7,90 @@
     <meta name="author" content="Venkata Sai Hitesh Jonnalagadda" />
     <meta name="theme-color" content="#0078d4" />
 
+    <link rel="canonical" href="https://hiteshsai.github.io/" />
+
     <!-- Open Graph -->
     <meta property="og:title" content="Hitesh Jonnalagadda | PM @ Microsoft Security" />
     <meta property="og:description" content="Product Manager driving the agentic AI ecosystem for enterprise security. Microsoft Security Store · Columbia MBA · Tokyo → NYC → Redmond." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hiteshsai.github.io" />
+    <meta property="og:url" content="https://hiteshsai.github.io/" />
+    <meta property="og:site_name" content="Hitesh Jonnalagadda" />
+    <meta property="og:image" content="https://hiteshsai.github.io/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Hitesh Jonnalagadda — Product Manager at Microsoft Security" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hitesh Jonnalagadda | PM @ Microsoft Security" />
+    <meta name="twitter:description" content="Product Manager driving the agentic AI ecosystem for enterprise security. Microsoft Security Store · Columbia MBA · Tokyo → NYC → Redmond." />
+    <meta name="twitter:image" content="https://hiteshsai.github.io/img/og-image.png" />
+    <meta name="twitter:image:alt" content="Hitesh Jonnalagadda — Product Manager at Microsoft Security" />
 
     <title>Hitesh Jonnalagadda | Product Manager @ Microsoft Security</title>
 
+    <!-- Icons & manifest -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Structured data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Venkata Sai Hitesh Jonnalagadda",
+      "alternateName": "Hitesh Jonnalagadda",
+      "url": "https://hiteshsai.github.io/",
+      "image": "https://hiteshsai.github.io/img/profile.jpg",
+      "jobTitle": "Product Manager",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Microsoft",
+        "department": "Microsoft Security"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bellevue",
+        "addressRegion": "WA",
+        "addressCountry": "US"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Columbia Business School"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Mahindra University"
+        }
+      ],
+      "knowsAbout": [
+        "Agentic AI",
+        "Product Management",
+        "Enterprise Security",
+        "Platform Strategy",
+        "Kubernetes"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/saihitesh/",
+        "https://github.com/hiteshsai"
+      ]
+    }
+    </script>
   </head>
 
   <body>
+    <a href="#about" class="skip-link">Skip to content</a>
     <!-- Nav -->
     <nav class="nav" role="navigation" aria-label="Main navigation">
       <div class="container nav__inner">
@@ -69,6 +138,7 @@
         </p>
         <div class="hero__cta">
           <a href="#contact" class="btn btn--primary">Let's talk</a>
+          <a href="Profile.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Résumé ↓</a>
           <a href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">LinkedIn →</a>
         </div>
       </div>
@@ -87,7 +157,10 @@
         </div>
         <div class="about__grid">
           <div class="about__image-wrapper reveal">
-            <img class="about__image" src="img/profile.jpg" alt="Hitesh Jonnalagadda at Columbia graduation" loading="lazy" />
+            <picture>
+              <source srcset="img/profile.webp" type="image/webp" />
+              <img class="about__image" src="img/profile.jpg" alt="Hitesh Jonnalagadda at Columbia graduation" width="800" height="1000" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <div class="about__text reveal">
             <p>
