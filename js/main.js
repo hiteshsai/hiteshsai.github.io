@@ -19,6 +19,15 @@
   function setTheme(theme) {
     root.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
+    updateThemeControl(theme);
+  }
+
+  function updateThemeControl(theme) {
+    if (!themeToggle) return;
+
+    var isDark = theme === 'dark';
+    themeToggle.setAttribute('aria-pressed', String(isDark));
+    themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
   }
 
   // Initialize
@@ -29,6 +38,8 @@
       const current = root.getAttribute('data-theme');
       setTheme(current === 'dark' ? 'light' : 'dark');
     });
+  } else {
+    updateThemeControl(getPreferredTheme());
   }
 
   // Listen for OS changes
@@ -43,24 +54,34 @@
   const navLinks = document.getElementById('nav-links');
 
   if (hamburger && navLinks) {
+    function closeNav() {
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+
     hamburger.addEventListener('click', function () {
       const isOpen = navLinks.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
     });
 
     // Close on link click
     navLinks.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
-        navLinks.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
+        closeNav();
       });
     });
 
     // Close on outside click
     document.addEventListener('click', function (e) {
       if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-        navLinks.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
+        closeNav();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        closeNav();
+        hamburger.focus();
       }
     });
   }

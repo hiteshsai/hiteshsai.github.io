@@ -11,7 +11,16 @@ Personal portfolio site for **Hitesh Jonnalagadda**, Product Manager at Microsof
 - Vanilla HTML, CSS, JS (zero dependencies)
 - Hosted on GitHub Pages
 - Dark/light mode with system preference detection
-- Scroll-driven animations via IntersectionObserver
+- Scroll reveal animations via IntersectionObserver
+- Semantic static HTML with custom CSS design system
+
+## Quality checks
+
+```bash
+npm run validate
+```
+
+The validation script is dependency-free and checks core static-site assumptions such as required files, landmarks, internal anchors, metadata, and safe external links.
 
 ## Local dev
 

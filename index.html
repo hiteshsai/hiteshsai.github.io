@@ -8,6 +8,13 @@
     <meta name="theme-color" content="#0078d4" />
 
     <link rel="canonical" href="https://hiteshsai.github.io/" />
+    <script>
+      (function () {
+        var storedTheme = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', storedTheme || (prefersDark ? 'dark' : 'light'));
+      })();
+    </script>
 
     <!-- Open Graph -->
     <meta property="og:title" content="Hitesh Jonnalagadda | PM @ Microsoft Security" />
@@ -90,12 +97,12 @@
   </head>
 
   <body>
-    <a href="#about" class="skip-link">Skip to content</a>
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- Nav -->
     <nav class="nav" role="navigation" aria-label="Main navigation">
       <div class="container nav__inner">
-        <a href="#" class="nav__logo">hitesh<span class="gradient-text">.</span></a>
-        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <a href="#main" class="nav__logo">hitesh<span class="gradient-text">.</span></a>
+        <button class="nav__hamburger" id="nav-hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
           </svg>
@@ -107,7 +114,7 @@
           <li><a class="nav__link" href="#skills">Skills</a></li>
           <li><a class="nav__link" href="#contact">Contact</a></li>
           <li>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
               <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
                 <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
@@ -123,14 +130,15 @@
       </div>
     </nav>
 
+    <main id="main" tabindex="-1">
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero__content">
         <div class="hero__badge">
           <span class="hero__badge-dot"></span>
           Product Manager · Microsoft Security
         </div>
-        <h1 class="hero__name">
+        <h1 class="hero__name" id="hero-title">
           I build the marketplace where <span class="gradient-text">AI agents</span> ship to enterprise security.
         </h1>
         <p class="hero__thesis">
@@ -426,6 +434,7 @@
               <span class="skill-tag">Python</span>
               <span class="skill-tag">Terraform & IaC</span>
               <span class="skill-tag">CI/CD Pipelines</span>
+              <span class="skill-tag">GitHub Copilot</span>
               <span class="skill-tag">Machine Learning</span>
               <span class="skill-tag">System Design</span>
             </div>
@@ -467,6 +476,7 @@
         </div>
       </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">

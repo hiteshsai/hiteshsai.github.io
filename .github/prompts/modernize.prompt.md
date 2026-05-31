@@ -1,52 +1,50 @@
 ---
-description: "Modernize the portfolio site from legacy Bootstrap 4/jQuery template to a next-gen personal site for a Microsoft engineer"
+description: "Improve the modern static portfolio site for a Microsoft Security product manager"
 ---
 
-# Modernize Portfolio Site
+# Improve Portfolio Site
 
-Rebuild `hiteshsai.github.io` as a modern, next-generation personal portfolio.
+Improve `hiteshsai.github.io` as a modern, fast, accessible personal portfolio.
 
 ## Owner
 
 - **Name**: Venkata Sai Hitesh Jonnalagadda
-- **Role**: Software Engineer at **Microsoft**
+- **Role**: Product Manager at Microsoft Security
 - **GitHub**: [hiteshsai](https://github.com/hiteshsai)
 - **LinkedIn**: [saihitesh](https://www.linkedin.com/in/saihitesh/)
 
-## Requirements
+## Current Stack
 
-### Tech Stack
-- Replace Bootstrap 4 + jQuery + Gulp with a modern stack (Astro, Vite, or vanilla modern HTML/CSS/JS)
-- Use Tailwind CSS or modern CSS (custom properties, grid, animations)
-- Zero jQuery — use native browser APIs
-- Static output only (GitHub Pages compatible)
+- Vanilla HTML, CSS, and JavaScript
+- No framework and no runtime dependencies
+- Static output only, compatible with GitHub Pages
+- Custom CSS design system with light/dark themes
 
-### Design
-- Clean, minimal, professional aesthetic appropriate for a Microsoft engineer
-- Dark/light mode toggle with system preference detection
-- Smooth transitions and micro-animations (CSS transitions, View Transitions API)
-- Responsive: mobile-first, fluid typography, modern breakpoints
-- Modern color palette — not the old teal/orange Freelancer theme
+## Improvement Priorities
 
-### Content to Include
-- Hero section with name, title (Software Engineer @ Microsoft), and a brief tagline
-- About/bio section
-- Experience timeline (Microsoft and prior roles)
-- Skills/technologies (Azure, cloud, current stack)
-- Projects/portfolio (refresh with current work)
-- Contact section (keep Formspree or equivalent)
-- Social links (GitHub, LinkedIn, and any other current profiles)
-- Footer with copyright (dynamic year)
+### Content
 
-### Performance & Quality
-- Lighthouse score targets: 95+ across all categories
-- Semantic HTML5, ARIA labels, keyboard navigation
-- Optimized images (WebP/AVIF with fallbacks, lazy loading)
-- Minimal JavaScript bundle
-- No deprecated APIs (remove old UA Google Analytics)
+- Keep the hero, metadata, schema.org data, manifest, and visible copy aligned with Product Manager at Microsoft Security positioning.
+- Emphasize Microsoft Security Store, partner ecosystem, agentic AI, and enterprise security.
+- Keep prior SRE, startup PM, MBA, and ML experience as supporting career context.
+- Avoid adding private Microsoft/internal details.
 
-### Cleanup
-- Delete `functions/` (unused Firebase boilerplate)
-- Delete `mail/contact_me.php` (unused)
-- Remove committed `vendor/` directory — use bundler imports
-- Remove or replace Google Ads script
+### Quality
+
+- Preserve semantic HTML5 landmarks and one clear `h1`.
+- Ensure ARIA labels and states stay accurate.
+- Keep keyboard navigation and visible focus states working.
+- Respect `prefers-reduced-motion`.
+- Use optimized images with explicit dimensions and meaningful alt text.
+
+### Performance
+
+- Keep JavaScript minimal and dependency-free.
+- Avoid adding analytics or trackers unless explicitly requested.
+- Avoid introducing a framework unless the site outgrows the current static architecture.
+
+### Maintainability
+
+- Keep documentation accurate with the actual implementation.
+- Prefer small, focused edits to `index.html`, `css/style.css`, and `js/main.js`.
+- If validation tooling is added, keep it lightweight and dependency-free.

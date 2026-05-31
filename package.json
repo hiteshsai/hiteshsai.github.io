@@ -1,0 +1,9 @@
+{
+  "name": "hiteshsai.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static personal portfolio for Hitesh Jonnalagadda.",
+  "scripts": {
+    "validate": "node scripts/validate-site.mjs"
+  }
+}
