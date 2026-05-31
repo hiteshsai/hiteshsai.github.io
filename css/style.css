@@ -297,6 +297,10 @@ a:hover { color: var(--color-accent-hover); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+@media (max-width: 768px) {
+  .hero__scroll-hint { display: none; }
+}
+
 /* --- Buttons --------------------------------------------- */
 .btn {
   display: inline-flex; align-items: center; gap: var(--space-sm);
