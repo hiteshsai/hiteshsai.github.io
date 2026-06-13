@@ -1,134 +1,103 @@
-/* ============================================================
-   Hitesh Jonnalagadda — Portfolio JS
-   Dark/light mode toggle · Mobile nav · Scroll reveal
-   ============================================================ */
+const root = document.documentElement;
+const themeToggle = document.getElementById("theme-toggle");
+const menuToggle = document.getElementById("menu-toggle");
+const siteNav = document.getElementById("site-nav");
+const navLinks = document.querySelectorAll(".site-nav__link");
+const revealElements = document.querySelectorAll("[data-reveal]");
+const yearElement = document.getElementById("year");
+const themeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+const themeStorageKey = "theme";
 
-(function () {
-  'use strict';
-
-  // --- Dark / Light mode toggle ---
-  const themeToggle = document.getElementById('theme-toggle');
-  const root = document.documentElement;
-
-  function getPreferredTheme() {
-    const stored = localStorage.getItem('theme');
-    if (stored) return stored;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
-  function setTheme(theme) {
-    root.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-    updateThemeControl(theme);
-  }
-
-  function updateThemeControl(theme) {
-    if (!themeToggle) return;
-
-    var isDark = theme === 'dark';
-    themeToggle.setAttribute('aria-pressed', String(isDark));
-    themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-  }
-
-  // Initialize
-  setTheme(getPreferredTheme());
-
+const setTheme = (theme) => {
+  root.setAttribute("data-theme", theme);
+  localStorage.setItem(themeStorageKey, theme);
   if (themeToggle) {
-    themeToggle.addEventListener('click', function () {
-      const current = root.getAttribute('data-theme');
-      setTheme(current === 'dark' ? 'light' : 'dark');
-    });
-  } else {
-    updateThemeControl(getPreferredTheme());
+    themeToggle.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
   }
+};
 
-  // Listen for OS changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-    if (!localStorage.getItem('theme')) {
-      setTheme(e.matches ? 'dark' : 'light');
-    }
-  });
+const currentTheme = root.getAttribute("data-theme");
+if (!currentTheme) {
+  setTheme(themeQuery.matches ? "dark" : "light");
+}
 
-  // --- Mobile navigation ---
-  const hamburger = document.getElementById('nav-hamburger');
-  const navLinks = document.getElementById('nav-links');
+themeToggle?.addEventListener("click", () => {
+  const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  setTheme(nextTheme);
+});
 
-  if (hamburger && navLinks) {
-    function closeNav() {
-      navLinks.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-    }
-
-    hamburger.addEventListener('click', function () {
-      const isOpen = navLinks.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    // Close on link click
-    navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        closeNav();
-      });
-    });
-
-    // Close on outside click
-    document.addEventListener('click', function (e) {
-      if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-        closeNav();
-      }
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
-        closeNav();
-        hamburger.focus();
-      }
-    });
+themeQuery.addEventListener("change", (event) => {
+  if (!localStorage.getItem(themeStorageKey)) {
+    setTheme(event.matches ? "dark" : "light");
   }
+});
 
-  // --- Scroll reveal (IntersectionObserver) ---
-  var reveals = document.querySelectorAll('.reveal');
-  if (reveals.length > 0 && 'IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
+const closeMenu = () => {
+  if (!siteNav || !menuToggle) return;
+  siteNav.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+};
+
+menuToggle?.addEventListener("click", () => {
+  if (!siteNav || !menuToggle) return;
+  const isOpen = siteNav.classList.toggle("is-open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+document.addEventListener("click", (event) => {
+  if (!siteNav || !menuToggle) return;
+  const target = event.target;
+  if (!(target instanceof Element)) return;
+  if (!siteNav.contains(target) && !menuToggle.contains(target)) {
+    closeMenu();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeMenu();
+  }
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => closeMenu());
+});
+
+if ("IntersectionObserver" in window && revealElements.length > 0) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add("is-visible");
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -60px 0px" },
+  );
 
-    reveals.forEach(function (el) {
-      observer.observe(el);
-    });
-  }
+  revealElements.forEach((element) => revealObserver.observe(element));
+}
 
-  // --- Active nav link on scroll ---
-  var sections = document.querySelectorAll('section[id]');
-  if (sections.length > 0) {
-    var navObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        var id = entry.target.getAttribute('id');
-        var link = document.querySelector('.nav__link[href="#' + id + '"]');
-        if (link) {
-          if (entry.isIntersecting) {
-            document.querySelectorAll('.nav__link').forEach(function (l) {
-              l.classList.remove('active');
-            });
-            link.classList.add('active');
-          }
-        }
+const sections = document.querySelectorAll("section[id]");
+if ("IntersectionObserver" in window && sections.length > 0) {
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const sectionId = entry.target.getAttribute("id");
+        navLinks.forEach((link) => {
+          const isCurrent = link.getAttribute("href") === `#${sectionId}`;
+          link.classList.toggle("is-active", isCurrent);
+        });
       });
-    }, { threshold: 0.3 });
+    },
+    { threshold: 0.4 },
+  );
 
-    sections.forEach(function (section) {
-      navObserver.observe(section);
-    });
-  }
+  sections.forEach((section) => sectionObserver.observe(section));
+}
 
-  // --- Dynamic copyright year ---
-  var yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
-})();
+if (yearElement) {
+  yearElement.textContent = String(new Date().getFullYear());
+}

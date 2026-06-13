@@ -1,498 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Hitesh Jonnalagadda | Product Manager at Microsoft Security. I own the partner ecosystem for the Microsoft Security Store, where AI agents and agentic security solutions ship to enterprise customers at global scale. Columbia MBA. Ex-SRE Tokyo." />
+    <meta
+      name="description"
+      content="Venkata Sai Hitesh Jonnalagadda - Software Engineer at Microsoft building secure AI and agent experiences for enterprise teams."
+    />
     <meta name="author" content="Venkata Sai Hitesh Jonnalagadda" />
     <meta name="theme-color" content="#0078d4" />
-
-    <link rel="canonical" href="https://hiteshsai.github.io/" />
-    <script>
-      (function () {
-        var storedTheme = localStorage.getItem('theme');
-        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.setAttribute('data-theme', storedTheme || (prefersDark ? 'dark' : 'light'));
-      })();
-    </script>
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Hitesh Jonnalagadda | PM @ Microsoft Security" />
-    <meta property="og:description" content="Product Manager driving the agentic AI ecosystem for enterprise security. Microsoft Security Store · Columbia MBA · Tokyo → NYC → Redmond." />
+    <meta property="og:title" content="Hitesh Jonnalagadda | Software Engineer @ Microsoft" />
+    <meta
+      property="og:description"
+      content="Software engineer focused on AI agents, cloud security, and developer platforms at Microsoft."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hiteshsai.github.io/" />
-    <meta property="og:site_name" content="Hitesh Jonnalagadda" />
-    <meta property="og:image" content="https://hiteshsai.github.io/img/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Hitesh Jonnalagadda — Product Manager at Microsoft Security" />
-
-    <!-- Twitter Card -->
+    <meta property="og:url" content="https://hiteshsai.github.io" />
+    <meta property="og:image" content="https://hiteshsai.github.io/img/profile.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Hitesh Jonnalagadda | PM @ Microsoft Security" />
-    <meta name="twitter:description" content="Product Manager driving the agentic AI ecosystem for enterprise security. Microsoft Security Store · Columbia MBA · Tokyo → NYC → Redmond." />
-    <meta name="twitter:image" content="https://hiteshsai.github.io/img/og-image.png" />
-    <meta name="twitter:image:alt" content="Hitesh Jonnalagadda — Product Manager at Microsoft Security" />
+    <meta name="twitter:image" content="https://hiteshsai.github.io/img/profile.jpg" />
 
-    <title>Hitesh Jonnalagadda | Product Manager @ Microsoft Security</title>
-
-    <!-- Icons & manifest -->
-    <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <title>Hitesh Jonnalagadda | Software Engineer @ Microsoft</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Structured data: Person -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Venkata Sai Hitesh Jonnalagadda",
-      "alternateName": "Hitesh Jonnalagadda",
-      "url": "https://hiteshsai.github.io/",
-      "image": "https://hiteshsai.github.io/img/profile.jpg",
-      "jobTitle": "Product Manager",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Microsoft",
-        "department": "Microsoft Security"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bellevue",
-        "addressRegion": "WA",
-        "addressCountry": "US"
-      },
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Columbia Business School"
-        },
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Mahindra University"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/img/profile.jpg" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+          return;
         }
-      ],
-      "knowsAbout": [
-        "Agentic AI",
-        "Product Management",
-        "Enterprise Security",
-        "Platform Strategy",
-        "Kubernetes"
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/saihitesh/",
-        "https://github.com/hiteshsai"
-      ]
-    }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
     </script>
   </head>
-
   <body>
-    <a href="#main" class="skip-link">Skip to content</a>
-    <!-- Nav -->
-    <nav class="nav" role="navigation" aria-label="Main navigation">
-      <div class="container nav__inner">
-        <a href="#main" class="nav__logo">hitesh<span class="gradient-text">.</span></a>
-        <button class="nav__hamburger" id="nav-hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-          </svg>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="#top" class="brand">hiteshsai</a>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle site navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <ul class="nav__links" id="nav-links">
-          <li><a class="nav__link" href="#about">About</a></li>
-          <li><a class="nav__link" href="#experience">Experience</a></li>
-          <li><a class="nav__link" href="#perspective">Perspective</a></li>
-          <li><a class="nav__link" href="#skills">Skills</a></li>
-          <li><a class="nav__link" href="#contact">Contact</a></li>
-          <li>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
-              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-              </svg>
-              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-              </svg>
-            </button>
-          </li>
-        </ul>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="#about" class="site-nav__link">About</a>
+          <a href="#projects" class="site-nav__link">Projects</a>
+          <a href="#journey" class="site-nav__link">Journey</a>
+          <a href="#skills" class="site-nav__link">Skills</a>
+          <a href="#contact" class="site-nav__link">Contact</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+            <span aria-hidden="true">Theme</span>
+          </button>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <main id="main" tabindex="-1">
-    <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__content">
-        <div class="hero__badge">
-          <span class="hero__badge-dot"></span>
-          Product Manager · Microsoft Security
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="container hero__content">
+          <p class="hero__eyebrow" data-reveal>Software Engineer @ Microsoft</p>
+          <h1 class="hero__title" data-reveal>
+            Building secure AI and <span class="gradient-text">agent experiences</span> for enterprise teams.
+          </h1>
+          <p class="hero__summary" data-reveal>
+            I design and ship developer-facing platforms that make cloud security workflows faster, safer, and easier to scale.
+            My current focus is Azure, Copilot-powered productivity, and security-first product engineering.
+          </p>
+          <div class="hero__actions" data-reveal>
+            <a class="button button--primary" href="#projects">View Projects</a>
+            <a class="button button--ghost" href="/Profile.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          </div>
         </div>
-        <h1 class="hero__name" id="hero-title">
-          I build the marketplace where <span class="gradient-text">AI agents</span> ship to enterprise security.
-        </h1>
-        <p class="hero__thesis">
-          I own product strategy for the <strong>Microsoft Security Store</strong>. My job is making it easy for partners to build and ship agentic AI solutions across Defender, Sentinel, Entra, Purview, and Intune.
-        </p>
-        <div class="hero__cta">
-          <a href="#contact" class="btn btn--primary">Let's talk</a>
-          <a href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">LinkedIn →</a>
-        </div>
-      </div>
-      <div class="hero__scroll-hint">
-        <span>Scroll</span>
-        <div class="hero__scroll-line"></div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__label">About</p>
-          <h2 class="section__title">The short version</h2>
-        </div>
-        <div class="about__grid">
-          <div class="about__image-wrapper reveal">
+      <section class="section" id="about">
+        <div class="container section__grid section__grid--about">
+          <article class="card card--profile" data-reveal>
             <picture>
-              <source srcset="img/profile.webp" type="image/webp" />
-              <img class="about__image" src="img/profile.jpg" alt="Hitesh Jonnalagadda at Columbia graduation" width="800" height="1000" loading="lazy" decoding="async" />
+              <source srcset="/img/profile.webp" type="image/webp" />
+              <img
+                src="/img/profile.jpg"
+                alt="Hitesh Jonnalagadda smiling in graduation attire outdoors"
+                class="profile-image"
+                loading="lazy"
+              />
             </picture>
-          </div>
-          <div class="about__text reveal">
+          </article>
+          <article class="card" data-reveal>
+            <p class="section__label">About</p>
+            <h2 class="section__title">Engineering outcomes, not just features</h2>
             <p>
-              The best security products aren't the most secure. They're the ones partners can actually ship.
-            </p>
-            <p>
-              I'm a Product Manager at Microsoft Security. I own the partner ecosystem for the <strong>Microsoft Security Store</strong>, which means I spend my days figuring out how to make it as easy as possible for CSPs, MSSPs, and security ISVs to build AI-powered solutions and get them in front of enterprise buyers.
-            </p>
-            <p>
-              Before this, I was a <strong>0-to-1 builder</strong>. Founding-team PM at two startups (one hit 800+ customers in Q1), then a Senior SRE in Tokyo keeping production alive for APAC. I can write a PRD that engineers actually want to build, and I'll push back hard on the ones that won't ship.
+              I am a software engineer at Microsoft with roots in production reliability, cloud infrastructure, and
+              product-minded execution. I enjoy turning ambiguous AI ideas into robust systems that teams can trust.
             </p>
             <p>
-              <strong>Columbia MBA</strong> (Strategy, Tech & Ops) · <strong>Dartmouth Tuck</strong> Bridge · <strong>Microsoft AI Transformation Leader</strong>. Technical roots in Kubernetes and cloud infrastructure (CKA, CKAD). Built across Tokyo, New York, and Redmond. Conversational Japanese. Five languages.
+              Across startups and enterprise teams, I have worked on cloud-native services, developer tooling, and
+              automation workflows that improve release velocity while raising security and quality bars.
             </p>
-            <div class="about__highlights">
-              <div class="about__highlight">
-                <div class="about__highlight-value gradient-text">7+</div>
-                <div class="about__highlight-label">Years in Tech</div>
-              </div>
-              <div class="about__highlight">
-                <div class="about__highlight-value gradient-text">3</div>
-                <div class="about__highlight-label">Countries Built In</div>
-              </div>
-              <div class="about__highlight">
-                <div class="about__highlight-value gradient-text">5</div>
-                <div class="about__highlight-label">Languages Spoken</div>
-              </div>
-            </div>
+            <ul class="about-metrics">
+              <li><strong>7+ years</strong><span>Engineering experience</span></li>
+              <li><strong>3 countries</strong><span>Teams across APAC and US</span></li>
+              <li><strong>AI + Cloud</strong><span>Platform-first delivery style</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--surface" id="projects">
+        <div class="container">
+          <div class="section__header" data-reveal>
+            <p class="section__label">Projects</p>
+            <h2 class="section__title">Recent builds</h2>
+            <p class="section__subtitle">A sample of the AI and productivity tooling I actively build and maintain.</p>
+          </div>
+          <div class="project-grid">
+            <article class="card project-card" data-reveal>
+              <h3>Career Resilience Hub</h3>
+              <p>
+                AI-assisted planning workspace for market research, opportunity tracking, and career decision support.
+              </p>
+              <a href="https://github.com/hiteshsai/career-resilience-hub" target="_blank" rel="noopener noreferrer">Open repository</a>
+            </article>
+            <article class="card project-card" data-reveal>
+              <h3>Stakeholder Brief Agent</h3>
+              <p>
+                Agent workflow for producing concise, high-signal stakeholder updates from raw product and customer inputs.
+              </p>
+              <a href="https://github.com/hiteshsai/stakeholder-brief-agent" target="_blank" rel="noopener noreferrer">Open repository</a>
+            </article>
+            <article class="card project-card" data-reveal>
+              <h3>MIP SOW Builder</h3>
+              <p>
+                Structured automation project that accelerates SOW creation and consistency for Microsoft Information Protection scenarios.
+              </p>
+              <a href="https://github.com/hiteshsai/MIP-SOW-Builder" target="_blank" rel="noopener noreferrer">Open repository</a>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Quote -->
-    <div class="quote-block reveal">
-      <p class="quote-block__text">
-        "The future of enterprise security is autonomous agents that detect, reason, and respond at machine speed. Shipped responsibly, with the trust enterprise buyers demand."
-      </p>
-      <p class="quote-block__attr">How I think about the work</p>
-    </div>
-
-    <!-- Experience -->
-    <section class="section section--alt" id="experience">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__label">Experience</p>
-          <h2 class="section__title">From production on-call to product strategy</h2>
-          <p class="section__subtitle">SRE → Startup PM → MBA → Microsoft. Every role sharpened a different edge.</p>
-        </div>
-        <div class="timeline reveal-stagger">
-
-          <div class="timeline__item reveal" style="--i: 0">
-            <div class="timeline__dot"></div>
-            <h3 class="timeline__role">Product Manager</h3>
-            <p class="timeline__company"><span class="gradient-text">Microsoft</span> · Security</p>
-            <p class="timeline__period">Feb 2026 · Present</p>
-            <p class="timeline__desc">
-              I run the partner side of the <strong>Microsoft Security Store</strong>. That means figuring out how CSPs, MSSPs, and security ISVs actually build and ship AI agents on top of Defender, Sentinel, Entra, Purview, and Intune. My job is to make the APIs, developer tools, and go-to-market motion good enough that partners choose to build here instead of anywhere else.
-            </p>
+      <section class="section" id="journey">
+        <div class="container">
+          <div class="section__header" data-reveal>
+            <p class="section__label">Journey</p>
+            <h2 class="section__title">From SRE to software engineering leadership tracks</h2>
           </div>
-
-          <div class="timeline__item timeline__item--past reveal" style="--i: 1">
-            <div class="timeline__dot"></div>
-            <h3 class="timeline__role">Security Solutions Advisor</h3>
-            <p class="timeline__company"><span class="gradient-text">Microsoft</span> · New York</p>
-            <p class="timeline__period">Jul 2025 · Feb 2026</p>
-            <p class="timeline__desc">
-              Sat across the table from enterprise security buyers and learned what actually matters to them. Advised on architecture, helped close deals, and brought that frontline signal back to the product team so roadmaps reflected real problems.
-            </p>
-          </div>
-
-          <div class="timeline__item timeline__item--past reveal" style="--i: 2">
-            <div class="timeline__dot"></div>
-            <h3 class="timeline__role">MBA, Strategy, Technology & Operations</h3>
-            <p class="timeline__company">Columbia Business School · New York</p>
-            <p class="timeline__period">2024 · 2025</p>
-            <p class="timeline__desc">
-              Led product and consulting projects for <strong>Walmart</strong>, <strong>Christofle</strong>, and <strong>Ohanae</strong>. Scoped product requirements, ran consumer research for a luxury brand, and redesigned a fintech checkout flow. Came out sharper on strategy, GTM, and working in ambiguity.
-            </p>
-          </div>
-
-          <div class="timeline__item timeline__item--past reveal" style="--i: 3">
-            <div class="timeline__dot"></div>
-            <h3 class="timeline__role">Product Manager, Founding Team</h3>
-            <p class="timeline__company">Yoko Street</p>
-            <p class="timeline__period">Jan 2023 · May 2024</p>
-            <p class="timeline__desc">
-              Joined as the first PM and shipped multiple products in year one. Built a feedback loop that pushed CSAT up <span class="metric">80%</span>, reworked the digital funnel to grow subscriptions by <span class="metric">48%</span>, and ran campaigns that brought in <span class="metric">800+</span> customers in Q1. Learned what it means to own everything when there's no one else to hand it off to.
-            </p>
-          </div>
-
-          <div class="timeline__item timeline__item--past reveal" style="--i: 4">
-            <div class="timeline__dot"></div>
-            <h3 class="timeline__role">Senior Site Reliability Engineer</h3>
-            <p class="timeline__company">Oisix ra daichi · Tokyo, Japan</p>
-            <p class="timeline__period">Oct 2019 · Feb 2023</p>
-            <p class="timeline__desc">
-              Rebuilt the cloud infrastructure that kept APAC grocery delivery running. Improved uptime by <span class="metric">30%</span>, cut incident response time by <span class="metric">40%</span>, and got disaster recovery to <span class="metric">100%</span>. Created the monitoring dashboards the whole company ended up using (<span class="metric">38%</span> efficiency gain). On call for production. CKA & CKAD certified. AWS, Terraform, Ansible, Kubernetes.
-            </p>
-          </div>
-
-          <div class="timeline__item timeline__item--past reveal" style="--i: 5">
-            <div class="timeline__dot"></div>
-            <h3 class="timeline__role">Product Intern (Machine Learning)</h3>
-            <p class="timeline__company">Jocata Financial Advisory · Hyderabad</p>
-            <p class="timeline__period">2019</p>
-            <p class="timeline__desc">
-              Built an ML pipeline that automated document extraction at <span class="metric">99%</span> accuracy. It got picked up by <span class="metric">20+</span> financial institutions and added roughly <span class="metric">$250K</span> in annual revenue. The first time I shipped something that actually scaled.
-            </p>
-          </div>
-
-          <div class="timeline__item timeline__item--past reveal" style="--i: 6">
-            <div class="timeline__dot"></div>
-            <h3 class="timeline__role">B.Tech, Computer Science</h3>
-            <p class="timeline__company">Mahindra University · Hyderabad</p>
-            <p class="timeline__period">2015 · 2019</p>
-            <p class="timeline__desc">
-              Spent summers doing research: ML-based space debris classification at University of Florida, a Kaggle competition where we ranked top 5 globally at IIIT Hyderabad, computer vision at Tech Mahindra, and a stint at T-Hub, India's largest startup incubator. Graduated with the Best Outgoing Student Award.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Perspective / Thesis -->
-    <section class="section" id="perspective">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__label">Perspective</p>
-          <h2 class="section__title">What I believe about building products</h2>
-        </div>
-        <div class="thesis__grid reveal-stagger">
-
-          <div class="thesis-card reveal" style="--i: 0">
-            <div class="thesis-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-              </svg>
-            </div>
-            <h3 class="thesis-card__title">Agentic AI changes everything</h3>
-            <p class="thesis-card__text">
-              We're going from copilots that help you work to agents that work on your behalf. Enterprise security won't be about staring at dashboards much longer. It'll be agents that detect threats, reason about context, and respond before a human could. I'm shipping the platform that lets partners build these.
-            </p>
-          </div>
-
-          <div class="thesis-card reveal" style="--i: 1">
-            <div class="thesis-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
-              </svg>
-            </div>
-            <h3 class="thesis-card__title">Platforms win by making partners successful</h3>
-            <p class="thesis-card__text">
-              Your own features aren't the moat. The ecosystem is. If partners can build, ship, and grow on your platform faster than anywhere else, you win. That's why I care so much about developer experience, clean APIs, and cutting the time it takes to go from idea to live product.
-            </p>
-          </div>
-
-          <div class="thesis-card reveal" style="--i: 2">
-            <div class="thesis-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-              </svg>
-            </div>
-            <h3 class="thesis-card__title">Ship first, then iterate on signal</h3>
-            <p class="thesis-card__text">
-              SRE taught me that perfect is the enemy of uptime. I bring that same instinct to product: figure out the smallest thing that teaches you something real, ship it, measure what happens, and decide what to do next. Ambiguity doesn't scare me.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section section--alt" id="skills">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__label">Skills</p>
-          <h2 class="section__title">Where I operate</h2>
-        </div>
-
-        <!-- Certifications -->
-        <div class="certs reveal">
-          <span class="cert-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Microsoft AI Transformation Leader
-          </span>
-          <span class="cert-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Columbia MBA
-          </span>
-          <span class="cert-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            CKA & CKAD (Kubernetes)
-          </span>
-        </div>
-
-        <div class="skills__grid reveal-stagger">
-          <div class="skill-card reveal" style="--i: 0">
-            <div class="skill-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-              </svg>
-            </div>
-            <h3 class="skill-card__title">AI & Agentic Ecosystems</h3>
-            <div class="skill-card__tags">
-              <span class="skill-tag">Agentic AI</span>
-              <span class="skill-tag">AI Agents</span>
-              <span class="skill-tag">LLMs & Copilots</span>
-              <span class="skill-tag">Generative AI</span>
-              <span class="skill-tag">Responsible AI</span>
-              <span class="skill-tag">Trust & Safety</span>
-              <span class="skill-tag">RAG Pipelines</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal" style="--i: 1">
-            <div class="skill-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-              </svg>
-            </div>
-            <h3 class="skill-card__title">Product & Platform Strategy</h3>
-            <div class="skill-card__tags">
-              <span class="skill-tag">0-to-1 Product</span>
-              <span class="skill-tag">Platform PM</span>
-              <span class="skill-tag">Marketplace Strategy</span>
-              <span class="skill-tag">Partner Ecosystems</span>
-              <span class="skill-tag">API & DX Design</span>
-              <span class="skill-tag">GTM Execution</span>
-              <span class="skill-tag">Product-Led Growth</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal" style="--i: 2">
-            <div class="skill-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <h3 class="skill-card__title">Enterprise Security</h3>
-            <div class="skill-card__tags">
-              <span class="skill-tag">Microsoft Defender</span>
-              <span class="skill-tag">Microsoft Sentinel</span>
-              <span class="skill-tag">Entra ID</span>
-              <span class="skill-tag">Purview</span>
-              <span class="skill-tag">Intune</span>
-              <span class="skill-tag">Cybersecurity</span>
-              <span class="skill-tag">Zero Trust</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal" style="--i: 3">
-            <div class="skill-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-              </svg>
-            </div>
-            <h3 class="skill-card__title">Technical Depth</h3>
-            <div class="skill-card__tags">
-              <span class="skill-tag">Azure & AWS</span>
-              <span class="skill-tag">Kubernetes</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Terraform & IaC</span>
-              <span class="skill-tag">CI/CD Pipelines</span>
-              <span class="skill-tag">GitHub Copilot</span>
-              <span class="skill-tag">Machine Learning</span>
-              <span class="skill-tag">System Design</span>
-            </div>
+          <div class="timeline">
+            <article class="timeline__item" data-reveal>
+              <h3>Software Engineer</h3>
+              <p class="timeline__meta">Microsoft · 2026 - Present</p>
+              <p>Delivering secure AI and developer platform capabilities across Microsoft-focused engineering workflows.</p>
+            </article>
+            <article class="timeline__item" data-reveal>
+              <h3>Security Solutions Advisor</h3>
+              <p class="timeline__meta">Microsoft · 2025 - 2026</p>
+              <p>Translated enterprise security architecture needs into actionable product and engineering insights.</p>
+            </article>
+            <article class="timeline__item" data-reveal>
+              <h3>Senior Site Reliability Engineer</h3>
+              <p class="timeline__meta">Oisix ra daichi · 2019 - 2023</p>
+              <p>Scaled Kubernetes-based production systems, improved resiliency, and reduced incident response time.</p>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__label">Contact</p>
-          <h2 class="section__title">Let's build something</h2>
-          <p class="section__subtitle">Always happy to talk with builders, product people, and anyone working at the intersection of AI and security.</p>
+      <section class="section section--surface" id="skills">
+        <div class="container">
+          <div class="section__header" data-reveal>
+            <p class="section__label">Skills</p>
+            <h2 class="section__title">Core technical areas</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="card" data-reveal>
+              <h3>Cloud & Security</h3>
+              <ul class="chip-list">
+                <li>Azure</li>
+                <li>Microsoft Defender</li>
+                <li>Microsoft Sentinel</li>
+                <li>Zero Trust</li>
+              </ul>
+            </article>
+            <article class="card" data-reveal>
+              <h3>AI Engineering</h3>
+              <ul class="chip-list">
+                <li>GitHub Copilot</li>
+                <li>LLM workflows</li>
+                <li>Agentic systems</li>
+                <li>Responsible AI patterns</li>
+              </ul>
+            </article>
+            <article class="card" data-reveal>
+              <h3>Platform Delivery</h3>
+              <ul class="chip-list">
+                <li>TypeScript / JavaScript</li>
+                <li>Python</li>
+                <li>Kubernetes</li>
+                <li>CI/CD and automation</li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <div class="contact__links reveal">
-          <a class="contact__link-card" href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
-            </svg>
-            <span class="contact__link-label">LinkedIn</span>
-            <span class="contact__link-handle">in/saihitesh</span>
-          </a>
-          <a class="contact__link-card" href="mailto:hiteshjo@microsoft.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
-            </svg>
-            <span class="contact__link-label">Email</span>
-            <span class="contact__link-handle">hiteshjo@microsoft.com</span>
-          </a>
-          <a class="contact__link-card" href="https://github.com/hiteshsai" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            <span class="contact__link-label">GitHub</span>
-            <span class="contact__link-handle">hiteshsai</span>
-          </a>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section__header" data-reveal>
+            <p class="section__label">Contact</p>
+            <h2 class="section__title">Let us connect</h2>
+            <p class="section__subtitle">I enjoy collaborating on cloud security, AI engineering, and developer productivity.</p>
+          </div>
+          <div class="contact-grid" data-reveal>
+            <a class="card contact-card" href="mailto:hiteshjo@microsoft.com">
+              <h3>Email</h3>
+              <p>hiteshjo@microsoft.com</p>
+            </a>
+            <a class="card contact-card" href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer">
+              <h3>LinkedIn</h3>
+              <p>linkedin.com/in/saihitesh</p>
+            </a>
+            <a class="card contact-card" href="https://github.com/hiteshsai" target="_blank" rel="noopener noreferrer">
+              <h3>GitHub</h3>
+              <p>github.com/hiteshsai</p>
+            </a>
+          </div>
+          <form class="card contact-form" data-reveal action="https://formspree.io/f/xgenwpap" method="POST">
+            <h3>Send a message</h3>
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" required />
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" required />
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+            <button class="button button--primary" type="submit">Submit</button>
+          </form>
         </div>
-      </div>
-    </section>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <p class="footer__copy">&copy; <span id="year"></span> Hitesh Jonnalagadda · Bellevue, WA</p>
-        <div class="footer__socials">
-          <a class="footer__social" href="https://github.com/hiteshsai" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-          <a class="footer__social" href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </div>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>&copy; <span id="year"></span> Venkata Sai Hitesh Jonnalagadda</p>
+        <p>Built with Vite and deployed on GitHub Pages</p>
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>

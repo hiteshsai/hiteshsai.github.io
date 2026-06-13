@@ -1,6 +1,6 @@
 # hiteshsai.github.io
 
-Personal portfolio site for **Hitesh Jonnalagadda**, Product Manager at Microsoft Security.
+Modernized personal website for **Venkata Sai Hitesh Jonnalagadda**, Software Engineer at Microsoft.
 
 ## Live
 
@@ -8,24 +8,28 @@ Personal portfolio site for **Hitesh Jonnalagadda**, Product Manager at Microsof
 
 ## Stack
 
-- Vanilla HTML, CSS, JS (zero dependencies)
-- Hosted on GitHub Pages
-- Dark/light mode with system preference detection
-- Scroll reveal animations via IntersectionObserver
-- Semantic static HTML with custom CSS design system
+- Vite (modern static build pipeline)
+- Semantic HTML, modern CSS design system, and vanilla JavaScript
+- GitHub Pages hosting
+- Dark/light mode with system preference support and manual toggle
 
-## Quality checks
-
-```bash
-npm run validate
-```
-
-The validation script is dependency-free and checks core static-site assumptions such as required files, landmarks, internal anchors, metadata, and safe external links.
-
-## Local dev
+## Local development
 
 ```bash
-python -m http.server 3000
+npm install
+npm run dev
 ```
 
-Open [localhost:3000](http://localhost:3000).
+Open the URL printed by Vite (default: `http://localhost:5173`).
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Assets
+
+- Resume download is served from `public/Profile.pdf` (linked as `/Profile.pdf`).
+- Social preview and favicon currently use `img/profile.jpg`.
