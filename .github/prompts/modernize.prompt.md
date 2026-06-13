@@ -1,5 +1,5 @@
 ---
-description: "Improve the modern static portfolio site for a Microsoft Security product manager"
+description: "Improve the modern static portfolio site for a Microsoft software engineer"
 ---
 
 # Improve Portfolio Site
@@ -9,7 +9,7 @@ Improve `hiteshsai.github.io` as a modern, fast, accessible personal portfolio.
 ## Owner
 
 - **Name**: Venkata Sai Hitesh Jonnalagadda
-- **Role**: Product Manager at Microsoft Security
+- **Role**: Software Engineer at Microsoft
 - **GitHub**: [hiteshsai](https://github.com/hiteshsai)
 - **LinkedIn**: [saihitesh](https://www.linkedin.com/in/saihitesh/)
 
@@ -24,9 +24,9 @@ Improve `hiteshsai.github.io` as a modern, fast, accessible personal portfolio.
 
 ### Content
 
-- Keep the hero, metadata, schema.org data, manifest, and visible copy aligned with Product Manager at Microsoft Security positioning.
-- Emphasize Microsoft Security Store, partner ecosystem, agentic AI, and enterprise security.
-- Keep prior SRE, startup PM, MBA, and ML experience as supporting career context.
+- Keep the hero, metadata, schema.org data, manifest, and visible copy aligned with Software Engineer at Microsoft positioning.
+- Emphasize AI engineering, cloud security, and enterprise delivery.
+- Keep prior SRE, startup, MBA, and ML experience as supporting career context.
 - Avoid adding private Microsoft/internal details.
 
 ### Quality
