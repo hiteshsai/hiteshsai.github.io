@@ -365,6 +365,9 @@ a {
 .card--profile {
   padding: 0;
   overflow: hidden;
+  align-self: start;
+  position: sticky;
+  top: calc(var(--header-height, 0px) + var(--space-3));
 }
 
 .profile-image {
@@ -405,6 +408,15 @@ a {
   display: grid;
   gap: var(--space-2);
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.skill-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-grid {
+  grid-template-columns: repeat(2, minmax(200px, 320px));
+  justify-content: center;
 }
 
 .project-card h3,
@@ -568,9 +580,16 @@ a {
 @media (max-width: 960px) {
   .section__grid--about,
   .project-grid,
-  .skill-grid,
-  .contact-grid {
+  .skill-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(180px, 280px));
+  }
+
+  .card--profile {
+    position: static;
   }
 
   .about-metrics {
@@ -581,6 +600,15 @@ a {
 @media (max-width: 760px) {
   .menu-toggle {
     display: block;
+  }
+
+  .section__grid--about {
+    grid-template-columns: 1fr;
+  }
+
+  .card--profile {
+    max-width: 320px;
+    margin-inline: auto;
   }
 
   .site-nav {
