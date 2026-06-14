@@ -24,7 +24,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,0..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="/img/profile.jpg" />
     <link rel="stylesheet" href="/css/style.css" />
     <script>
@@ -74,6 +77,7 @@
     <main id="main-content">
       <section class="hero" id="top">
         <div class="container hero__content">
+          <p class="hero__status" data-reveal>Available for partner conversations</p>
           <p class="hero__eyebrow" data-reveal>Product Manager · Microsoft Security</p>
           <h1 class="hero__title" data-reveal>
             Building the marketplace where <span class="gradient-text">AI agents</span> ship to enterprise security.
@@ -84,7 +88,7 @@
             Entra, Purview, and Intune.
           </p>
           <div class="hero__actions" data-reveal>
-            <a class="button button--primary" href="#experience">View Experience</a>
+            <a class="button button--primary" href="#experience">View experience</a>
             <a class="button button--ghost" href="https://www.linkedin.com/in/saihitesh/" target="_blank" rel="noopener noreferrer">LinkedIn →</a>
           </div>
         </div>
@@ -104,7 +108,7 @@
             </picture>
           </article>
           <article class="card" data-reveal>
-            <p class="section__label">About</p>
+            <p class="section__label" data-num="01">About</p>
             <h2 class="section__title">The short version</h2>
             <p>
               The best security products aren't the most secure. They're the ones partners can actually ship.
@@ -137,77 +141,98 @@
         <a id="journey" aria-hidden="true" tabindex="-1"></a>
         <div class="container">
           <div class="section__header" data-reveal>
-            <p class="section__label">Experience</p>
+            <p class="section__label" data-num="02">Experience</p>
             <h2 class="section__title">From production on-call to product strategy</h2>
-            <p class="section__subtitle">SRE → Startup PM → MBA → Microsoft. Every role sharpened a different edge.</p>
+            <p class="section__subtitle">SRE, then startup PM, then MBA, then Microsoft. Every role sharpened a different edge.</p>
           </div>
           <div class="timeline">
             <article class="timeline__item" data-reveal>
-              <h3>Product Manager</h3>
-              <p class="timeline__meta">Microsoft Security · Redmond · Feb 2026 to Present</p>
-              <p>
-                I run the partner side of the <strong>Microsoft Security Store</strong>. That means figuring out how CSPs, MSSPs,
-                and security ISVs actually build and ship AI agents on top of Defender, Sentinel, Entra, Purview, and Intune. My job
-                is to make the APIs, developer tools, and go-to-market motion good enough that partners choose to build here instead
-                of anywhere else.
-              </p>
+              <p class="timeline__year">2026 —</p>
+              <div>
+                <h3>Product Manager</h3>
+                <p class="timeline__meta">Microsoft Security · Redmond · Feb 2026 to Present</p>
+                <p>
+                  I run the partner side of the <strong>Microsoft Security Store</strong>. That means figuring out how CSPs, MSSPs,
+                  and security ISVs actually build and ship AI agents on top of Defender, Sentinel, Entra, Purview, and Intune. My job
+                  is to make the APIs, developer tools, and go-to-market motion good enough that partners choose to build here instead
+                  of anywhere else.
+                </p>
+              </div>
             </article>
             <article class="timeline__item" data-reveal>
-              <h3>Security Solutions Advisor</h3>
-              <p class="timeline__meta">Microsoft · New York · Jul 2025 to Feb 2026</p>
-              <p>
-                Sat across the table from enterprise security buyers and learned what actually matters to them. Advised on
-                architecture, helped close deals, and brought that frontline signal back to the product team so roadmaps reflected
-                real problems.
-              </p>
+              <p class="timeline__year">2025</p>
+              <div>
+                <h3>Security Solutions Advisor</h3>
+                <p class="timeline__meta">Microsoft · New York · Jul 2025 to Feb 2026</p>
+                <p>
+                  Sat across the table from enterprise security buyers and learned what actually matters to them. Advised on
+                  architecture, helped close deals, and brought that frontline signal back to the product team so roadmaps reflected
+                  real problems.
+                </p>
+              </div>
             </article>
             <article class="timeline__item" data-reveal>
-              <h3>MBA, Strategy, Technology &amp; Operations</h3>
-              <p class="timeline__meta">Columbia Business School · New York · 2024 to 2025</p>
-              <p>
-                Led product and consulting projects for <strong>Walmart</strong>, <strong>Christofle</strong>, and
-                <strong>Ohanae</strong>. Scoped product requirements, ran consumer research for a luxury brand, and redesigned a
-                fintech checkout flow. Came out sharper on strategy, GTM, and working in ambiguity.
-              </p>
+              <p class="timeline__year">2024</p>
+              <div>
+                <h3>MBA, Strategy, Technology &amp; Operations</h3>
+                <p class="timeline__meta">Columbia Business School · New York · 2024 to 2025</p>
+                <p>
+                  Led product and consulting projects for <strong>Walmart</strong>, <strong>Christofle</strong>, and
+                  <strong>Ohanae</strong>. Scoped product requirements, ran consumer research for a luxury brand, and redesigned a
+                  fintech checkout flow. Came out sharper on strategy, GTM, and working in ambiguity.
+                </p>
+              </div>
             </article>
             <article class="timeline__item" data-reveal>
-              <h3>Product Manager, Founding Team</h3>
-              <p class="timeline__meta">Yoko Street · Jan 2023 to May 2024</p>
-              <p>
-                Joined as the first PM and shipped multiple products in year one. Built a feedback loop that pushed CSAT up
-                <span class="metric">80%</span>, reworked the digital funnel to grow subscriptions by
-                <span class="metric">48%</span>, and ran campaigns that brought in
-                <span class="metric">800+</span> customers in Q1. Learned what it means to own everything when there's no one else
-                to hand it off to.
-              </p>
+              <p class="timeline__year">2023</p>
+              <div>
+                <h3>Product Manager, Founding Team</h3>
+                <p class="timeline__meta">Yoko Street · Jan 2023 to May 2024</p>
+                <p>
+                  Joined as the first PM and shipped multiple products in year one. Built a feedback loop that pushed CSAT up
+                  <span class="metric">80%</span>, reworked the digital funnel to grow subscriptions by
+                  <span class="metric">48%</span>, and ran campaigns that brought in
+                  <span class="metric">800+</span> customers in Q1. Learned what it means to own everything when there's no one else
+                  to hand it off to.
+                </p>
+              </div>
             </article>
             <article class="timeline__item" data-reveal>
-              <h3>Senior Site Reliability Engineer</h3>
-              <p class="timeline__meta">Oisix ra daichi · Tokyo, Japan · Oct 2019 to Feb 2023</p>
-              <p>
-                Rebuilt the cloud infrastructure that kept APAC grocery delivery running. Improved uptime by
-                <span class="metric">30%</span>, cut incident response time by <span class="metric">40%</span>, and got disaster
-                recovery to <span class="metric">100%</span>. Created the monitoring dashboards the whole company ended up using
-                (<span class="metric">38%</span> efficiency gain). On call for production. AWS, Terraform, Ansible, Kubernetes.
-              </p>
+              <p class="timeline__year">2019</p>
+              <div>
+                <h3>Senior Site Reliability Engineer</h3>
+                <p class="timeline__meta">Oisix ra daichi · Tokyo, Japan · Oct 2019 to Feb 2023</p>
+                <p>
+                  Rebuilt the cloud infrastructure that kept APAC grocery delivery running. Improved uptime by
+                  <span class="metric">30%</span>, cut incident response time by <span class="metric">40%</span>, and got disaster
+                  recovery to <span class="metric">100%</span>. Created the monitoring dashboards the whole company ended up using
+                  (<span class="metric">38%</span> efficiency gain). On call for production. AWS, Terraform, Ansible, Kubernetes.
+                </p>
+              </div>
             </article>
             <article class="timeline__item" data-reveal>
-              <h3>Product Intern, Machine Learning</h3>
-              <p class="timeline__meta">Jocata Financial Advisory · Hyderabad · 2019</p>
-              <p>
-                Built an ML pipeline that automated document extraction at <span class="metric">99%</span> accuracy. It got picked
-                up by <span class="metric">20+</span> financial institutions and added roughly
-                <span class="metric">$250K</span> in annual revenue. The first time I shipped something that actually scaled.
-              </p>
+              <p class="timeline__year">2019</p>
+              <div>
+                <h3>Product Intern, Machine Learning</h3>
+                <p class="timeline__meta">Jocata Financial Advisory · Hyderabad · 2019</p>
+                <p>
+                  Built an ML pipeline that automated document extraction at <span class="metric">99%</span> accuracy. It got picked
+                  up by <span class="metric">20+</span> financial institutions and added roughly
+                  <span class="metric">$250K</span> in annual revenue. The first time I shipped something that actually scaled.
+                </p>
+              </div>
             </article>
             <article class="timeline__item" data-reveal>
-              <h3>B.Tech, Computer Science</h3>
-              <p class="timeline__meta">Mahindra University · Hyderabad · 2015 to 2019</p>
-              <p>
-                Spent summers doing research: ML-based space debris classification at the University of Florida, a Kaggle competition
-                where we ranked top 5 globally at IIIT Hyderabad, computer vision at Tech Mahindra, and a stint at T-Hub, India's
-                largest startup incubator. Graduated with the Best Outgoing Student Award.
-              </p>
+              <p class="timeline__year">2015</p>
+              <div>
+                <h3>B.Tech, Computer Science</h3>
+                <p class="timeline__meta">Mahindra University · Hyderabad · 2015 to 2019</p>
+                <p>
+                  Spent summers doing research: ML-based space debris classification at the University of Florida, a Kaggle competition
+                  where we ranked top 5 globally at IIIT Hyderabad, computer vision at Tech Mahindra, and a stint at T-Hub, India's
+                  largest startup incubator. Graduated with the Best Outgoing Student Award.
+                </p>
+              </div>
             </article>
           </div>
         </div>
@@ -217,7 +242,7 @@
         <a id="highlights" aria-hidden="true" tabindex="-1"></a>
         <div class="container">
           <div class="section__header" data-reveal>
-            <p class="section__label">Perspective</p>
+            <p class="section__label" data-num="03">Perspective</p>
             <h2 class="section__title">What I believe about building products</h2>
           </div>
           <div class="project-grid">
@@ -252,7 +277,7 @@
       <section class="section section--surface" id="skills">
         <div class="container">
           <div class="section__header" data-reveal>
-            <p class="section__label">Skills</p>
+            <p class="section__label" data-num="04">Skills</p>
             <h2 class="section__title">Where I operate</h2>
           </div>
           <ul class="cert-list" data-reveal aria-label="Certifications">
@@ -315,7 +340,7 @@
       <section class="section" id="contact">
         <div class="container">
           <div class="section__header" data-reveal>
-            <p class="section__label">Contact</p>
+            <p class="section__label" data-num="05">Contact</p>
             <h2 class="section__title">Let's build something</h2>
             <p class="section__subtitle">Always happy to talk with builders, product people, and anyone working at the intersection of AI and security.</p>
           </div>
