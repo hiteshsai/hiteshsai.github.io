@@ -2,7 +2,7 @@
 
 ## Overview
 
-Personal portfolio site for **Venkata Sai Hitesh Jonnalagadda**, a **Software Engineer at Microsoft**.
+Personal portfolio site for **Venkata Sai Hitesh Jonnalagadda**, a **Product Manager at Microsoft**.
 Hosted on GitHub Pages at `hiteshsai.github.io`.
 
 ## Current State
@@ -23,13 +23,13 @@ The repository no longer uses Bootstrap, jQuery, Gulp, vendored assets, Firebase
 
 Keep content centered on:
 
-- Software engineering at Microsoft
+- Product management at Microsoft
 - AI and agent-enabled developer experiences
 - Cloud security and enterprise reliability
-- Engineering delivery across Azure, Defender, Sentinel, Entra, Purview, and Intune
-- Technical depth from SRE, cloud infrastructure, Kubernetes, and ML experience
+- Product delivery across Azure, Defender, Sentinel, Entra, Purview, and Intune
+- Technical depth from SRE, cloud infrastructure, Kubernetes, and ML-backed product thinking
 
-Do not reintroduce outdated Product Manager positioning unless explicitly requested.
+Keep Product Manager positioning consistent across visible site content and metadata.
 
 ## File Structure
 

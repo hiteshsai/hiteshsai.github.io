@@ -1,6 +1,6 @@
 # hiteshsai.github.io
 
-Modernized personal website for **Venkata Sai Hitesh Jonnalagadda**, Software Engineer at Microsoft.
+Modernized personal website for **Venkata Sai Hitesh Jonnalagadda**, Product Manager at Microsoft.
 
 ## Live
 
