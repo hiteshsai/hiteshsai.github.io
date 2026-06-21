@@ -10,6 +10,6 @@
     "validate": "node scripts/validate-site.mjs"
   },
   "devDependencies": {
-    "vite": "^5.4.19"
+    "vite": "^6.4.3"
   }
 }
