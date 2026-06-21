@@ -40,12 +40,13 @@ const manifest = JSON.parse(read('site.webmanifest'));
 const sitemap = read('sitemap.xml');
 const robots = read('robots.txt');
 
-if (!index.includes('<main id="main"')) {
-  fail('index.html must expose a <main id="main"> landmark.');
+if (!index.includes('<main id="main-content"')) {
+  fail('index.html must expose a <main id="main-content"> landmark.');
 }
 
-if (!index.includes('href="#main" class="skip-link"')) {
-  fail('Skip link must point to #main.');
+const skipLink = (index.match(/<a\b[^>]*class="[^"]*\bskip-link\b[^"]*"[^>]*>/) || [])[0] || '';
+if (!skipLink || !/href="#main-content"/.test(skipLink)) {
+  fail('Skip link must point to #main-content.');
 }
 
 const h1Count = (index.match(/<h1\b/g) || []).length;
@@ -53,8 +54,8 @@ if (h1Count !== 1) {
   fail(`Expected exactly one h1 in index.html, found ${h1Count}.`);
 }
 
-if (!index.includes('aria-controls="nav-links"')) {
-  fail('Mobile navigation button must reference nav-links via aria-controls.');
+if (!index.includes('aria-controls="site-nav"')) {
+  fail('Mobile navigation button must reference site-nav via aria-controls.');
 }
 
 const targetBlankLinks = index.match(/<a\b[^>]*target="_blank"[^>]*>/g) || [];
