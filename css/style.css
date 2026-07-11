@@ -1,24 +1,22 @@
 :root {
-  --color-bg: #f7f4ee;
+  --color-bg: #fbfbfc;
   --color-surface: #ffffff;
-  --color-surface-2: #f1ede4;
-  --color-text: #1a1a1f;
-  --color-text-muted: #6b6b73;
-  --color-border: #e6e1d4;
-  --color-accent: #0a4d8c;
-  --color-accent-hover: #0d3d6e;
-  --color-accent-soft: #e6eef8;
-  --color-warm: #c8753a;
-  --color-warm-soft: #f5e8db;
-  --color-hero-bg-1: #0d1219;
-  --color-hero-bg-2: #14202f;
-  --color-hero-bg-3: #1d3553;
-  --color-hero-text: #f7f3eb;
-  --shadow-sm: 0 1px 2px rgba(15, 17, 21, 0.04), 0 6px 22px rgba(15, 17, 21, 0.05);
-  --shadow-md: 0 2px 6px rgba(15, 17, 21, 0.06), 0 16px 40px rgba(15, 17, 21, 0.09);
+  --color-surface-2: #f2f3f5;
+  --color-text: #14161a;
+  --color-text-muted: #5b6069;
+  --color-border: #e4e6ea;
+  --color-accent: #1f5fff;
+  --color-accent-hover: #1747cc;
+  --color-accent-soft: #e7eeff;
+  --color-hero-bg-1: #080a0f;
+  --color-hero-bg-2: #0d141f;
+  --color-hero-bg-3: #12213b;
+  --color-hero-text: #f4f6fb;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05), 0 6px 22px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 2px 6px rgba(15, 23, 42, 0.07), 0 16px 40px rgba(15, 23, 42, 0.10);
 
   --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --font-serif: "Fraunces", "Iowan Old Style", "Apple Garamond", "Georgia", serif;
+  --font-display: "Bricolage Grotesque", "Inter", "Segoe UI", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
   --max-width: 1120px;
   --header-height: 72px;
@@ -35,34 +33,30 @@
 }
 
 [data-theme="dark"] {
-  --color-bg: #0e0e11;
-  --color-surface: #17171b;
-  --color-surface-2: #1f1f24;
-  --color-text: #f5f3ee;
-  --color-text-muted: #9a9aa3;
-  --color-border: #28282e;
-  --color-accent: #5fa8ff;
-  --color-accent-hover: #8ec1ff;
-  --color-accent-soft: #14243b;
-  --color-warm: #e0945a;
-  --color-warm-soft: #2a1f15;
+  --color-bg: #0b0d10;
+  --color-surface: #131519;
+  --color-surface-2: #1a1d22;
+  --color-text: #f4f5f7;
+  --color-text-muted: #969ba5;
+  --color-border: #262a30;
+  --color-accent: #5b8bff;
+  --color-accent-hover: #86a6ff;
+  --color-accent-soft: #12203d;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 22px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.5), 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --color-bg: #0e0e11;
-    --color-surface: #17171b;
-    --color-surface-2: #1f1f24;
-    --color-text: #f5f3ee;
-    --color-text-muted: #9a9aa3;
-    --color-border: #28282e;
-    --color-accent: #5fa8ff;
-    --color-accent-hover: #8ec1ff;
-    --color-accent-soft: #14243b;
-    --color-warm: #e0945a;
-    --color-warm-soft: #2a1f15;
+    --color-bg: #0b0d10;
+    --color-surface: #131519;
+    --color-surface-2: #1a1d22;
+    --color-text: #f4f5f7;
+    --color-text-muted: #969ba5;
+    --color-border: #262a30;
+    --color-accent: #5b8bff;
+    --color-accent-hover: #86a6ff;
+    --color-accent-soft: #12203d;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 22px rgba(0, 0, 0, 0.35);
     --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.5), 0 16px 40px rgba(0, 0, 0, 0.45);
   }
@@ -93,9 +87,9 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-weight: 400;
-  font-variation-settings: "opsz" 60, "SOFT" 50;
+  font-variation-settings: "opsz" 24;
   letter-spacing: -0.02em;
   line-height: 1.12;
   color: var(--color-text);
@@ -148,14 +142,14 @@ a {
 }
 
 .gradient-text {
-  color: var(--color-warm);
-  font-style: italic;
-  font-variation-settings: "opsz" 144, "SOFT" 100;
+  color: var(--color-accent);
+  font-weight: 600;
+  font-variation-settings: "opsz" 96;
 }
 
 .metric {
   font-weight: 600;
-  color: var(--color-warm);
+  color: var(--color-accent);
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
@@ -200,12 +194,11 @@ a {
 }
 
 .brand {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(1.15rem, 1rem + 0.4vw, 1.4rem);
-  font-weight: 500;
-  font-style: italic;
-  letter-spacing: -0.02em;
-  font-variation-settings: "opsz" 144, "SOFT" 100;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  font-variation-settings: "opsz" 96;
 }
 
 .site-nav {
@@ -264,7 +257,7 @@ a {
   position: relative;
   background:
     radial-gradient(ellipse 80% 60% at 20% 0%, color-mix(in srgb, var(--color-accent) 40%, transparent), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 90% 20%, color-mix(in srgb, var(--color-warm) 25%, transparent), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 90% 20%, color-mix(in srgb, var(--color-accent) 25%, transparent), transparent 55%),
     linear-gradient(160deg, var(--color-hero-bg-1) 0%, var(--color-hero-bg-2) 60%, var(--color-hero-bg-3) 100%);
   color: var(--color-hero-text);
   overflow: hidden;
@@ -329,18 +322,18 @@ a {
   margin: 0;
   max-width: 17ch;
   line-height: 1.02;
-  font-family: var(--font-serif);
-  font-weight: 350;
+  font-family: var(--font-display);
+  font-weight: 460;
   font-size: clamp(2.6rem, 1.6rem + 4.6vw, 5.6rem);
   letter-spacing: -0.035em;
-  font-variation-settings: "opsz" 144, "SOFT" 80;
+  font-variation-settings: "opsz" 96;
   color: var(--color-hero-text);
 }
 
 .hero__title .gradient-text {
-  color: #e8a87c;
-  font-style: italic;
-  font-variation-settings: "opsz" 144, "SOFT" 100;
+  color: #8fb0ff;
+  font-weight: 600;
+  font-variation-settings: "opsz" 96;
 }
 
 .hero__summary {
@@ -426,17 +419,17 @@ a {
 
 .section__label::before {
   content: attr(data-num) "  /  ";
-  color: var(--color-warm);
+  color: var(--color-accent);
 }
 
 .section__title {
   margin: 0;
-  font-family: var(--font-serif);
-  font-weight: 350;
+  font-family: var(--font-display);
+  font-weight: 460;
   line-height: 1.05;
   letter-spacing: -0.03em;
   font-size: clamp(2rem, 1.4rem + 2.4vw, 3.6rem);
-  font-variation-settings: "opsz" 144, "SOFT" 80;
+  font-variation-settings: "opsz" 96;
 }
 
 .section__subtitle {
@@ -507,12 +500,12 @@ a {
 
 .about-metrics strong {
   display: block;
-  font-family: var(--font-serif);
-  font-weight: 350;
+  font-family: var(--font-display);
+  font-weight: 460;
   font-size: clamp(1.6rem, 1.2rem + 1vw, 2.2rem);
   letter-spacing: -0.02em;
   line-height: 1.05;
-  font-variation-settings: "opsz" 144, "SOFT" 80;
+  font-variation-settings: "opsz" 96;
 }
 
 .about-metrics span {
@@ -523,12 +516,63 @@ a {
   letter-spacing: 0.01em;
 }
 
-.project-grid,
 .skill-grid,
 .contact-grid {
   display: grid;
   gap: var(--space-3);
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  counter-reset: belief;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-card {
+  position: relative;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: var(--space-4) 0;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 34ch) 1fr;
+  gap: var(--space-3);
+  align-items: start;
+  transition: background-color 200ms ease;
+}
+
+.project-card:hover {
+  transform: none;
+  background: color-mix(in srgb, var(--color-accent) 4%, transparent);
+}
+
+.project-card::before {
+  counter-increment: belief;
+  content: counter(belief, decimal-leading-zero);
+  grid-row: 1 / span 2;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  padding-top: 0.4rem;
+}
+
+.project-card h3 {
+  align-self: start;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 1.05rem + 0.9vw, 1.85rem);
+  font-weight: 460;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 96;
+}
+
+.project-card p {
+  grid-column: 3;
+  grid-row: 1 / span 2;
 }
 
 .skill-grid {
@@ -541,11 +585,14 @@ a {
   margin-bottom: var(--space-3);
 }
 
-.project-card h3,
 .contact-card h3,
 .skill-grid h3 {
   margin: 0 0 var(--space-2);
   font-size: 1.2rem;
+}
+
+.project-card h3 {
+  margin: 0;
 }
 
 .project-card p,
@@ -583,16 +630,16 @@ a {
 }
 
 .timeline__item:hover {
-  background: color-mix(in srgb, var(--color-warm) 4%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 4%, transparent);
 }
 
 .timeline__year {
-  font-family: var(--font-serif);
-  font-weight: 350;
+  font-family: var(--font-display);
+  font-weight: 460;
   font-size: clamp(1.5rem, 1.1rem + 1vw, 2.1rem);
   letter-spacing: -0.02em;
-  color: var(--color-warm);
-  font-variation-settings: "opsz" 144, "SOFT" 90;
+  color: var(--color-accent);
+  font-variation-settings: "opsz" 96;
   line-height: 1.1;
   white-space: nowrap;
 }
@@ -641,7 +688,7 @@ a {
 .chip-list li:not(:last-child)::after {
   content: " ·";
   margin-left: 0.4rem;
-  color: var(--color-warm);
+  color: var(--color-accent);
 }
 
 .contact-card {
@@ -651,15 +698,15 @@ a {
 
 .contact-card:hover {
   transform: translateY(-2px);
-  border-color: color-mix(in srgb, var(--color-warm) 35%, var(--color-border));
+  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
   box-shadow: var(--shadow-md);
 }
 
 .contact-card h3 {
-  font-family: var(--font-serif);
-  font-weight: 350;
+  font-family: var(--font-display);
+  font-weight: 460;
   font-size: 1.4rem;
-  font-variation-settings: "opsz" 144, "SOFT" 80;
+  font-variation-settings: "opsz" 96;
   letter-spacing: -0.01em;
 }
 
@@ -672,10 +719,10 @@ a {
 
 .contact-form h3 {
   margin: 0 0 var(--space-2);
-  font-family: var(--font-serif);
-  font-weight: 350;
+  font-family: var(--font-display);
+  font-weight: 460;
   font-size: clamp(1.6rem, 1.2rem + 1vw, 2.2rem);
-  font-variation-settings: "opsz" 144, "SOFT" 80;
+  font-variation-settings: "opsz" 96;
   letter-spacing: -0.02em;
 }
 
@@ -751,9 +798,21 @@ a {
 
 @media (max-width: 960px) {
   .section__grid--about,
-  .project-grid,
   .skill-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-card {
+    grid-template-columns: 3.5rem 1fr;
+  }
+
+  .project-card p {
+    grid-column: 2;
+    grid-row: auto;
+  }
+
+  .project-card::before {
+    grid-row: 1 / span 2;
   }
 
   .contact-grid {
