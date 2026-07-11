@@ -47,7 +47,17 @@ Keep Product Manager positioning consistent across visible site content and meta
 - Preserve light and dark theme support.
 - Use CSS Grid and Flexbox; do not add float-based layout.
 - Keep animations subtle and respect `prefers-reduced-motion`.
-- Keep the current professional Microsoft Security visual direction unless asked to redesign.
+
+### Current visual identity (preserve unless explicitly redesigning)
+
+- **Type:** Bricolage Grotesque display (`--font-display`), Inter body (`--font-sans`), JetBrains Mono for labels/meta (`--font-mono`).
+- **Accent:** a single locked Forest-green accent (`--color-accent`: `#1f7a4d` light, `#5fce93` dark). Exactly one accent color across the whole page.
+- **Surfaces:** cool near-white paper (light) / cool ink (dark); a dark ink-green hero with a single accent glow and subtle noise texture.
+- Do not revert to the pre-redesign look (Fraunces serif, warm-paper `#f7f4ee`, clay `#c8753a`, or a second Microsoft-blue accent). Those were the AI-tells removed in the taste-skill redesign.
+
+### Design taste (anti-slop)
+
+Every visual change must avoid the generic "AI look." Follow the full checklist in `.github/instructions/taste.instructions.md`. Core rules: one locked accent, editorial layouts over three-equal-card grids, token-driven color/spacing/radii, WCAG AA contrast on all buttons, and no em/en dashes in visible copy.
 
 ## Accessibility and Quality
 
