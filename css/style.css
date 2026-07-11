@@ -1,17 +1,17 @@
 :root {
-  --color-bg: #fbfbfc;
+  --color-bg: #f8f9f6;
   --color-surface: #ffffff;
-  --color-surface-2: #f2f3f5;
-  --color-text: #14161a;
-  --color-text-muted: #5b6069;
-  --color-border: #e4e6ea;
-  --color-accent: #1f5fff;
-  --color-accent-hover: #1747cc;
-  --color-accent-soft: #e7eeff;
-  --color-hero-bg-1: #080a0f;
-  --color-hero-bg-2: #0d141f;
-  --color-hero-bg-3: #12213b;
-  --color-hero-text: #f4f6fb;
+  --color-surface-2: #eef1ec;
+  --color-text: #141814;
+  --color-text-muted: #59635a;
+  --color-border: #e2e6df;
+  --color-accent: #1f7a4d;
+  --color-accent-hover: #175f3c;
+  --color-accent-soft: #e3f2e9;
+  --color-hero-bg-1: #071310;
+  --color-hero-bg-2: #0b2019;
+  --color-hero-bg-3: #123a2a;
+  --color-hero-text: #f2f7f1;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05), 0 6px 22px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 2px 6px rgba(15, 23, 42, 0.07), 0 16px 40px rgba(15, 23, 42, 0.10);
 
@@ -33,30 +33,30 @@
 }
 
 [data-theme="dark"] {
-  --color-bg: #0b0d10;
-  --color-surface: #131519;
-  --color-surface-2: #1a1d22;
-  --color-text: #f4f5f7;
-  --color-text-muted: #969ba5;
-  --color-border: #262a30;
-  --color-accent: #5b8bff;
-  --color-accent-hover: #86a6ff;
-  --color-accent-soft: #12203d;
+  --color-bg: #0a0d0b;
+  --color-surface: #121612;
+  --color-surface-2: #19201a;
+  --color-text: #f2f5f1;
+  --color-text-muted: #94a096;
+  --color-border: #253026;
+  --color-accent: #5fce93;
+  --color-accent-hover: #8fe0b3;
+  --color-accent-soft: #123023;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 22px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.5), 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --color-bg: #0b0d10;
-    --color-surface: #131519;
-    --color-surface-2: #1a1d22;
-    --color-text: #f4f5f7;
-    --color-text-muted: #969ba5;
-    --color-border: #262a30;
-    --color-accent: #5b8bff;
-    --color-accent-hover: #86a6ff;
-    --color-accent-soft: #12203d;
+    --color-bg: #0a0d0b;
+    --color-surface: #121612;
+    --color-surface-2: #19201a;
+    --color-text: #f2f5f1;
+    --color-text-muted: #94a096;
+    --color-border: #253026;
+    --color-accent: #5fce93;
+    --color-accent-hover: #8fe0b3;
+    --color-accent-soft: #123023;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 22px rgba(0, 0, 0, 0.35);
     --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.5), 0 16px 40px rgba(0, 0, 0, 0.45);
   }
@@ -331,7 +331,7 @@ a {
 }
 
 .hero__title .gradient-text {
-  color: #8fb0ff;
+  color: #7fe0a8;
   font-weight: 600;
   font-variation-settings: "opsz" 96;
 }
