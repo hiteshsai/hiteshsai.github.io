@@ -1,6 +1,6 @@
 # hiteshsai.github.io
 
-Modernized personal website for **Venkata Sai Hitesh Jonnalagadda**, Product Manager at Microsoft.
+Personal website for **Venkata Sai Hitesh Jonnalagadda**, Product Manager at Microsoft.
 
 ## Live
 
@@ -8,28 +8,19 @@ Modernized personal website for **Venkata Sai Hitesh Jonnalagadda**, Product Man
 
 ## Stack
 
-- Vite (modern static build pipeline)
 - Semantic HTML, modern CSS design system, and vanilla JavaScript
-- GitHub Pages hosting
+- GitHub Pages hosting directly from `master:/`
 - Dark/light mode with system preference support and manual toggle
 
 ## Local development
 
 ```bash
-npm install
-npm run dev
+python -m http.server 3000
 ```
 
-Open the URL printed by Vite (default: `http://localhost:5173`).
-
-## Production build
-
-```bash
-npm run build
-npm run preview
-```
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Assets
 
-- Resume download is served from `public/Profile.pdf` (linked as `/Profile.pdf`).
-- Social preview and favicon currently use `img/profile.jpg`.
+- Social previews use `img/og-image.png`.
+- Favicons and profile images are served from `img/`.
