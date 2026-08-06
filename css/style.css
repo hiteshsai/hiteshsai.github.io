@@ -8,6 +8,7 @@
   --color-accent: #1f7a4d;
   --color-accent-hover: #175f3c;
   --color-accent-soft: #e3f2e9;
+  --color-on-accent: #ffffff;
   --color-hero-bg-1: #071310;
   --color-hero-bg-2: #0b2019;
   --color-hero-bg-3: #123a2a;
@@ -42,6 +43,7 @@
   --color-accent: #5fce93;
   --color-accent-hover: #8fe0b3;
   --color-accent-soft: #123023;
+  --color-on-accent: #071310;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 22px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.5), 0 16px 40px rgba(0, 0, 0, 0.45);
 }
@@ -57,6 +59,7 @@
     --color-accent: #5fce93;
     --color-accent-hover: #8fe0b3;
     --color-accent-soft: #123023;
+    --color-on-accent: #071310;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 22px rgba(0, 0, 0, 0.35);
     --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.5), 0 16px 40px rgba(0, 0, 0, 0.45);
   }
@@ -127,7 +130,7 @@ a {
   top: var(--space-2);
   z-index: 200;
   background: var(--color-accent);
-  color: #ffffff;
+  color: var(--color-on-accent);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--radius-sm);
 }
@@ -374,12 +377,23 @@ a {
 }
 
 .button--primary {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.button--primary:hover {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.hero .button--primary {
   background: var(--color-hero-text);
   color: var(--color-hero-bg-1);
 }
 
-.button--primary:hover {
+.hero .button--primary:hover {
   background: #ffffff;
+  color: var(--color-hero-bg-1);
 }
 
 .button--ghost {
@@ -732,15 +746,8 @@ a {
   color: var(--color-text-muted);
 }
 
-.contact-form button {
+.contact-form .button--primary {
   justify-self: center;
-  background: var(--color-text);
-  color: var(--color-bg);
-}
-
-.contact-form button:hover {
-  background: var(--color-accent);
-  color: #ffffff;
 }
 
 .site-footer {

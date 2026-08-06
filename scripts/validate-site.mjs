@@ -58,6 +58,18 @@ if (!index.includes('aria-controls="site-nav"')) {
   fail('Mobile navigation button must reference site-nav via aria-controls.');
 }
 
+if (!index.includes('<link rel="canonical" href="https://hiteshsai.github.io/"')) {
+  fail('index.html must include the canonical homepage URL.');
+}
+
+if (!index.includes('<link rel="manifest" href="/site.webmanifest"')) {
+  fail('index.html must link the web manifest.');
+}
+
+if (!index.includes('content="https://hiteshsai.github.io/img/og-image.png"')) {
+  fail('Social preview metadata must use the purpose-built OG image.');
+}
+
 const targetBlankLinks = index.match(/<a\b[^>]*target="_blank"[^>]*>/g) || [];
 for (const link of targetBlankLinks) {
   if (!/rel="[^"]*\bnoopener\b[^"]*\bnoreferrer\b[^"]*"/.test(link)) {

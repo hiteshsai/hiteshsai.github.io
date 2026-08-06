@@ -1,11 +1,11 @@
 {
   "name": "Hitesh Jonnalagadda",
   "short_name": "Hitesh",
-  "description": "Product Manager at Microsoft Security. Building the marketplace where AI agents ship to enterprise security — partner ecosystem for the Microsoft Security Store.",
+  "description": "Product Manager at Microsoft Security. Building the marketplace where AI agents ship to enterprise security through the Microsoft Security Store partner ecosystem.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0f",
-  "theme_color": "#0078d4",
+  "background_color": "#f8f9f6",
+  "theme_color": "#1f7a4d",
   "icons": [
     { "src": "/img/favicon-16x16.png", "sizes": "16x16", "type": "image/png" },
     { "src": "/img/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },

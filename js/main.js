@@ -8,27 +8,24 @@ const yearElement = document.getElementById("year");
 const themeQuery = window.matchMedia("(prefers-color-scheme: dark)");
 const themeStorageKey = "theme";
 
-const setTheme = (theme) => {
+const applyTheme = (theme) => {
   root.setAttribute("data-theme", theme);
-  localStorage.setItem(themeStorageKey, theme);
   if (themeToggle) {
     themeToggle.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
   }
 };
 
-const currentTheme = root.getAttribute("data-theme");
-if (!currentTheme) {
-  setTheme(themeQuery.matches ? "dark" : "light");
-}
+applyTheme(root.getAttribute("data-theme") || (themeQuery.matches ? "dark" : "light"));
 
 themeToggle?.addEventListener("click", () => {
   const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-  setTheme(nextTheme);
+  applyTheme(nextTheme);
+  localStorage.setItem(themeStorageKey, nextTheme);
 });
 
 themeQuery.addEventListener("change", (event) => {
   if (!localStorage.getItem(themeStorageKey)) {
-    setTheme(event.matches ? "dark" : "light");
+    applyTheme(event.matches ? "dark" : "light");
   }
 });
 
@@ -89,10 +86,15 @@ if ("IntersectionObserver" in window && sections.length > 0) {
         navLinks.forEach((link) => {
           const isCurrent = link.getAttribute("href") === `#${sectionId}`;
           link.classList.toggle("is-active", isCurrent);
+          if (isCurrent) {
+            link.setAttribute("aria-current", "location");
+          } else {
+            link.removeAttribute("aria-current");
+          }
         });
       });
     },
-    { threshold: 0.4 },
+    { threshold: 0, rootMargin: "-30% 0px -60% 0px" },
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
