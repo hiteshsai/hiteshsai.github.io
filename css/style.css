@@ -302,8 +302,8 @@ a {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 0 4px color-mix(in srgb, #4ade80 25%, transparent);
+  background: var(--color-accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-accent) 25%, transparent);
   animation: pulse 2.4s ease-in-out infinite;
 }
 
@@ -334,7 +334,7 @@ a {
 }
 
 .hero__title .gradient-text {
-  color: #7fe0a8;
+  color: var(--color-accent);
   font-weight: 600;
   font-variation-settings: "opsz" 96;
 }
