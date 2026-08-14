@@ -35,6 +35,12 @@ const closeMenu = () => {
   menuToggle.setAttribute("aria-expanded", "false");
 };
 
+const closeMenuAndRestoreFocus = () => {
+  if (!siteNav?.classList.contains("is-open")) return;
+  closeMenu();
+  menuToggle?.focus();
+};
+
 menuToggle?.addEventListener("click", () => {
   if (!siteNav || !menuToggle) return;
   const isOpen = siteNav.classList.toggle("is-open");
@@ -52,7 +58,7 @@ document.addEventListener("click", (event) => {
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
-    closeMenu();
+    closeMenuAndRestoreFocus();
   }
 });
 
